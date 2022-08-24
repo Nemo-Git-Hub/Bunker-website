@@ -1,0 +1,15 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: #4F4A45;
+}
