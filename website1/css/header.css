@@ -37,16 +37,17 @@
 
 .btn_call {
   border: 2px solid #FFC300;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
   width: 190px;
   height: 48px;
-  left: 1175px;
-  top: 17px;
   background-color: #fff;
+  transition: 0.3s;
 }
 
 .btn_call:hover{
   background-color: #FFC300;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+
 }
