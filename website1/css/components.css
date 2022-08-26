@@ -1,13 +1,12 @@
 .button_active {
-  display: inline-block;
   width: 298px;
   height: 70px;
   background: #FFC300;
   font-size: 20px;
   font-weight: 600;
   color: white;
-  /*box-shadow: 16px 16px 0 2px rgba(255, 195, 0, 1);*/
-  /*box-shadow: 16px 16px 0 2px #FFC300;*/
+  position: relative;
+  z-index: 2;
 }
 
 .button_active:hover {
@@ -17,4 +16,14 @@
 .button_active:active {
   transform: translate3d(16px, 16px, 0);
   transition: 0.3s;
+}
+
+.button_active__shadow{
+  width: 294px;
+  height: 66px;
+  border: 2px solid #FFC300;
+  position: relative;
+  left: 16px;
+  bottom: 54px;
+  z-index: 1;
 }

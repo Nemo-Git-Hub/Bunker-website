@@ -16,7 +16,6 @@ body {
 .section {
   width: 100%;
   display: flex;
-  background-color: #4f4a45; /*-= DELETED =-*/
 }
 
 .container {
