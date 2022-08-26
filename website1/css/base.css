@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -26,9 +27,25 @@ body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+=======
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4F4A45;
+}
+
+.container {
+  max-width: 1440px;
+>>>>>>> 281dc34a2df8359dc399f0bbcf90a97d8fe79525
 }
 
 a {
   text-decoration: none;
+<<<<<<< HEAD
   color: #4f4a45;
 }
+=======
+  color: #4F4A45;
+}
+>>>>>>> 281dc34a2df8359dc399f0bbcf90a97d8fe79525
