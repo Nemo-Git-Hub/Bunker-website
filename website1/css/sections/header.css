@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   justify-content: center;
 }
@@ -32,22 +32,21 @@
   margin-right: 30px;
   font-weight: 700;
   line-height: 159.02%;
-  color: #FFC300;
+  color: #ffc300;
 }
 
 .btn_call {
-  border: 2px solid #FFC300;
+  border: 2px solid #ffc300;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   width: 190px;
   height: 48px;
   background-color: #fff;
-  transition: 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-.btn_call:hover{
-  background-color: #FFC300;
+.btn_call:hover {
+  background-color: #ffc300;
   color: #fff;
   cursor: pointer;
-
 }
