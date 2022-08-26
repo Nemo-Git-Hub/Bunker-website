@@ -1,0 +1,33 @@
+.section1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url("../../img/section1_img1.png") center / cover no-repeat;
+  color: white;
+}
+
+.section1__content {
+  margin: 0 0 0 84px;
+}
+
+.section1__text_narrow {
+  font-size: 32px;
+  margin-top: 214px;
+  line-height: 127.02%;
+}
+
+.section1__text_wide {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 86px;
+  line-height: 127.02%;
+}
+
+.section1__text_default20 {
+  margin-top: 5px;
+  margin-bottom: 48px;
+  font-size: 20px;
+  line-height: 159.02%;
+}
+
+
