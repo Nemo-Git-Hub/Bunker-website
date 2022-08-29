@@ -1,6 +1,6 @@
 .first-page {
   position: relative;
-  background: url("../../img/section1_img1.png") center / cover no-repeat;
+  background: url("../../assets/img/section1_img1.png") center / cover no-repeat;
   padding-top: 214px;
   padding-bottom: 130px;
 }

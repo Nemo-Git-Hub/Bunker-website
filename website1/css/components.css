@@ -27,3 +27,25 @@
   bottom: 54px;
   z-index: 1;
 }
+
+.title__section {
+  margin-left: 75px;
+  color: #4f4a45;
+}
+
+.title__header{
+  font-size: 36px;
+  height: 46px;
+}
+
+.title__line {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.appointment__header-text{
+  width: 628px;
+  height: 44px;
+  line-height: 159%;
+  margin-top: 28px;
+}
