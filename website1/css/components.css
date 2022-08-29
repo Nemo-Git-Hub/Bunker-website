@@ -1,0 +1,29 @@
+.button_active {
+  width: 298px;
+  height: 70px;
+  background: #FFC300;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.button_active:hover {
+  cursor: pointer;
+}
+
+.button_active:active {
+  transform: translate3d(16px, 16px, 0);
+  transition: 0.3s;
+}
+
+.button_active__shadow{
+  width: 294px;
+  height: 66px;
+  border: 2px solid #FFC300;
+  position: relative;
+  left: 16px;
+  bottom: 54px;
+  z-index: 1;
+}

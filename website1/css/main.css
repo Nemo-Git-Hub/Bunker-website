@@ -1,4 +1,7 @@
 @import "reset.css";
 @import "base.css";
+@import "components.css";
+
 /*SECTIONS*/
-@import "header.css";
+@import "sections/header.css";
+@import "sections/first-page.css";
