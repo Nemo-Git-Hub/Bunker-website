@@ -1,12 +1,10 @@
 @import "reset.css";
 @import "base.css";
-<<<<<<< HEAD
 @import "components.css";
 
 /*SECTIONS*/
 @import "sections/header.css";
 @import "sections/first-page.css";
-=======
+
 /*SECTIONS*/
 @import "header.css";
->>>>>>> 281dc34a2df8359dc399f0bbcf90a97d8fe79525
