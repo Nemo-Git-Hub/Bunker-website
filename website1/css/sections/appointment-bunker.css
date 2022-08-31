@@ -1,13 +1,13 @@
 .appointment-bunker {
   width: 1440px;
-  height: 600px;
   background-color: #F2EFE9;
-  padding-top: 76px;
+  padding-top: 65px;
+  padding-bottom: 76px;
 }
 
 .threat-box {
   display: flex;
-  margin-left: 75px;
+  padding-left: 75px;
   margin-top: 56px;
 }
 .threat {
