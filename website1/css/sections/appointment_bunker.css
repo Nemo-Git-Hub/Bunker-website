@@ -1,4 +1,4 @@
-.appointment_bunker {
+.appointment-bunker {
   width: 1440px;
   height: 600px;
   background-color: #F2EFE9;
@@ -9,7 +9,6 @@
   display: flex;
   margin-left: 75px;
   margin-top: 56px;
-
 }
 
 .threats {
@@ -19,7 +18,6 @@
   height: 275px;
   background-color: white;
   margin-right: 30px;
-  /*padding-top: 29px;*/
 }
 
 .icons-threats{
@@ -28,7 +26,7 @@
   margin-bottom: 21px;
 }
 
-.name-threat{
+.threats__name-threat{
   font-size: 24px;
   height: 38px;
 }
@@ -38,7 +36,7 @@
   align-items: center;
 }
 
-.protection-description{
+.threats__protection-description{
   width: 350px;
   height: 87px;
   line-height: 159%;

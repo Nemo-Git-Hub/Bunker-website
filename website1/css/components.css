@@ -28,22 +28,22 @@
   z-index: 1;
 }
 
-.title__section {
+.title-section {
   margin-left: 75px;
   color: #4f4a45;
 }
 
-.title__header{
+.title-section__header{
   font-size: 36px;
   height: 46px;
 }
 
-.title__line {
+.title-section__line {
   margin-left: 0;
   margin-top: 10px;
 }
 
-.appointment__header-text{
+.title-section__header-text{
   width: 628px;
   height: 44px;
   line-height: 159%;
