@@ -18,7 +18,7 @@
   transition: 0.3s;
 }
 
-.button_active__shadow{
+.button_active__shadow {
   width: 294px;
   height: 66px;
   border: 2px solid #FFC300;
@@ -28,22 +28,25 @@
   z-index: 1;
 }
 
-.title-section {
+.title {
   margin-left: 75px;
   color: #4f4a45;
 }
 
-.title-section__header{
+.title__header {
   font-size: 36px;
   height: 46px;
 }
 
-.title-section__line {
+.title__line {
   margin-left: 0;
   margin-top: 10px;
+  size: 4px;
+  width: 190px;
+  color: #FFC300;
 }
 
-.title-section__header-text{
+.title__header-text {
   width: 628px;
   height: 44px;
   line-height: 159%;

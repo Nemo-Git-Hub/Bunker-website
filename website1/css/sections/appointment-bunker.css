@@ -5,38 +5,34 @@
   padding-top: 76px;
 }
 
-.box-threats {
+.threat-box {
   display: flex;
   margin-left: 75px;
   margin-top: 56px;
 }
-
-.threats {
+.threat {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 410px;
   height: 275px;
   background-color: white;
   margin-right: 30px;
 }
 
-.icons-threats{
+.threat-icon{
   width: 50px;
   height: 50px;
   margin-bottom: 21px;
 }
 
-.threats__name-threat{
+.threat__threat-name{
   font-size: 24px;
   height: 38px;
 }
-.war, .cataclysms, .pollution {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.threats__protection-description{
+.threat__protection-description{
   width: 350px;
   height: 87px;
   line-height: 159%;
