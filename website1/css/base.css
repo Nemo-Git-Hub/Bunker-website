@@ -7,6 +7,11 @@ body {
   color: #4f4a45;
 }
 
+a {
+  text-decoration: none;
+  color: #4f4a45;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -20,24 +25,14 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1290px;
 }
 
 .mx-auto {
-  width: 100%;
-  max-width: 1272px;
-
   margin-left: auto;
   margin-right: auto;
 }
 
-a {
-  text-decoration: none;
-  color: #4f4a45;
-}
-
-.text-bold{
+.text-bold {
   font-weight: 700;
- }
+}

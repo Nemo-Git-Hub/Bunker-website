@@ -1,7 +1,17 @@
-.button_active {
+.button-active__shadow {
+  width: 294px;
+  height: 66px;
+  border: 2px solid #ffc300;
+  position: relative;
+  left: 16px;
+  bottom: 54px;
+  z-index: 1;
+}
+
+.button-active__button {
   width: 298px;
   height: 70px;
-  background: #FFC300;
+  background: #ffc300;
   font-size: 20px;
   font-weight: 600;
   color: white;
@@ -10,23 +20,13 @@
   border: none;
 }
 
-.button_active:hover {
+.button-active__button:hover {
   cursor: pointer;
 }
 
-.button_active:active {
+.button-active__button:active {
   transform: translate3d(16px, 16px, 0);
   transition: 0.3s;
-}
-
-.button_active__shadow {
-  width: 294px;
-  height: 66px;
-  border: 2px solid #FFC300;
-  position: relative;
-  left: 16px;
-  bottom: 54px;
-  z-index: 1;
 }
 
 .title {
@@ -45,7 +45,7 @@
   margin-top: 10px;
   height: 4px;
   width: 190px;
-  background-color: #FFC300;
+  background-color: #ffc300;
 }
 
 .title-description {
@@ -55,7 +55,7 @@
   margin-top: 28px;
 }
 
-.description-text{
+.description-text {
   font-weight: 300;
   font-size: 18px;
   line-height: 120%;
