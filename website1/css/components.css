@@ -31,7 +31,6 @@
 
 .title {
   margin-left: 0;
-  padding-left: 75px;
   color: #4f4a45;
 }
 
@@ -49,8 +48,15 @@
   background-color: #FFC300;
 }
 
-.title__header-text {
-  width: 628px;
+.title-description {
+  max-width: 626px;
+  width: 100%;
   line-height: 159%;
   margin-top: 28px;
+}
+
+.description-text{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
 }

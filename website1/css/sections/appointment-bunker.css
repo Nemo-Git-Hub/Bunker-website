@@ -1,25 +1,27 @@
 .appointment-bunker {
-  width: 1440px;
   background-color: #F2EFE9;
-  padding-top: 65px;
-  padding-bottom: 76px;
+  padding: 76px 75px;
+}
+
+.appointment-bunker__title-description{
+  margin-top: 13px;
 }
 
 .threat-box {
   display: flex;
-  padding-left: 75px;
-  margin-top: 56px;
+  margin-top: 42px;
 }
 
 .threat {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   width: 410px;
   height: 275px;
   background-color: white;
-  margin-right: 30px;
+  padding-top: 26px;
+  padding-bottom: 40px;
 }
 
 .threat-icon{
@@ -30,13 +32,17 @@
 
 .threat__threat-name{
   font-size: 24px;
-  height: 38px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .threat__protection-description{
   width: 350px;
-  height: 87px;
   line-height: 159%;
   font-weight: 300;
   text-align: center;
+}
+
+.threat_center-item{
+  margin: 0 30px;
 }
