@@ -1,0 +1,24 @@
+.protection-family-wrapper {
+  width: 100%;
+}
+
+.protection-family {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.img-family {
+  width: 627px;
+  height: 708px;
+}
+
+.protection-family__description {
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.button-protection-family {
+  margin-top: 54px;
+}

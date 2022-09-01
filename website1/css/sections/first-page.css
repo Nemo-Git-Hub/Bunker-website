@@ -1,5 +1,5 @@
-.first-page {
-  position: relative;
+.first-page-wrapper {
+  width: 100%;
   background: url("../../assets/img/section1_img1.png") center / cover no-repeat;
   padding-top: 214px;
   padding-bottom: 130px;

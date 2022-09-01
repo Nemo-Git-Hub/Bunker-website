@@ -2,7 +2,8 @@
 @import "base.css";
 @import "components.css";
 
-/*SECTIONS*/
+/* SECTIONS */
 @import "sections/header.css";
 @import "sections/first-page.css";
 @import "sections/appointment-bunker.css";
+@import "sections/protection-family.css";
