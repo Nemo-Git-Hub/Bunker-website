@@ -1,3 +1,7 @@
+test-folder
+
+website1/ReadMe.md
+
 .idea
 
 # Logs
@@ -82,7 +86,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
