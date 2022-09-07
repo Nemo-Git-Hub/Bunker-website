@@ -1,6 +1,6 @@
 .appointment-bunker-wrapper {
   width: 100%;
-  background-color: #f2efe9;
+  background-color: $grey-light;
 }
 
 .appointment-bunker {
@@ -27,7 +27,7 @@
   padding-top: 26px;
   padding-bottom: 40px;
   margin-right: 30px;
-  background-color: white;
+  background-color: $white;
 }
 
 .threat:last-child {

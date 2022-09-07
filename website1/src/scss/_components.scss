@@ -31,7 +31,7 @@
 
 .title {
   margin-left: 0;
-  color: #4f4a45;
+  color: $font-color-grey;
 }
 
 .title__header {
@@ -45,7 +45,7 @@
   margin-top: 10px;
   height: 4px;
   width: 190px;
-  background-color: #ffc300;
+  background-color: $yellow;
 }
 
 .title-description {
