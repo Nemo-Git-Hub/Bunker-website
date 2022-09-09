@@ -3,12 +3,12 @@
   display: flex;
   justify-content: center;
 
-  .nav {
+  &-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    .nav__logo {
+    &__logo {
       display: flex;
       align-items: center;
 
@@ -23,15 +23,7 @@
       }
     }
 
-    .menu {
-      display: flex;
-
-      .menu__link {
-        margin: 10px;
-      }
-    }
-
-    .nav__actions {
+    &__actions {
       display: flex;
       align-items: center;
 
@@ -50,15 +42,21 @@
         height: 48px;
         background-color: $white;
         transition: color 0.3s, background-color 0.3s;
-      }
 
-      .btn_call:hover {
-        background-color: $yellow;
-        color: $white;
-        cursor: pointer;
+        &:hover {
+          background-color: $yellow;
+          color: $white;
+          cursor: pointer;
+        }
       }
     }
   }
+
+  &-menu {
+    display: flex;
+
+    &__link {
+      margin: 10px;
+    }
+  }
 }
-
-
