@@ -16,7 +16,7 @@ a {
   align-items: center;
 }
 .container {
-  width: $w-100;
+  width: 100%;
   max-width: 1290px;
 }
 .mx-auto {
@@ -24,7 +24,7 @@ a {
   margin-right: auto;
 }
 .section {
-  width: $w-100;
+  width: 100%;
   display: flex;
 }
 .text-bold {

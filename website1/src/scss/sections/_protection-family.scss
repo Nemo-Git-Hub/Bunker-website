@@ -1,24 +1,24 @@
 .protection-family-wrapper {
-  width: $w-100;
+  width: 100%;
+}
 
-  .protection-family {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    padding-top: 100px;
+.protection-family {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 100px;
 
-    .protection-family__description {
-      margin-top: 40px;
-      margin-right: 40px;
-    }
+  &__description {
+    margin-top: 40px;
+    margin-right: 40px;
+  }
 
-    .button-protection-family {
-      margin-top: 54px;
-    }
+  .button-protection-family {
+    margin-top: 54px;
+  }
 
-    .img-family {
-      width: 627px;
-      height: 708px;
-    }
+  .img-family {
+    width: 627px;
+    height: 708px;
   }
 }
