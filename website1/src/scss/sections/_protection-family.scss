@@ -1,24 +1,26 @@
-.protection-family-wrapper {
-  width: 100%;
-}
-
-.protection-family {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 100px;
-  padding-top: 100px;
-
-  &__description {
-    margin-top: 40px;
-    margin-right: 40px;
+.protection-family{
+  &-wrapper {
+    width: 100%;
   }
 
-  .button-protection-family {
-    margin-top: 54px;
-  }
+  & {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 100px;
 
-  .img-family {
-    width: 627px;
-    height: 708px;
+    &__description {
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+
+    .button-protection-family {
+      margin-top: 54px;
+    }
+
+    .img-family {
+      width: 627px;
+      height: 708px;
+    }
   }
 }
