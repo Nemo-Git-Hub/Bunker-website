@@ -1,10 +1,13 @@
 @import "reset";
-@import "base.scss";
-@import "components.scss";
+
+/* CONFIGURATION */
+@import "variables";
+@import "base";
+@import "components";
 
 /* SECTIONS */
-@import "sections/header.scss";
-@import "sections/first-page.scss";
-@import "sections/appointment-bunker.scss";
-@import "sections/protection-family.scss";
-@import "sections/autonomy.scss";
+@import "sections/header";
+@import "sections/first-page";
+@import "sections/appointment-bunker";
+@import "sections/protection-family";
+@import "sections/autonomy";

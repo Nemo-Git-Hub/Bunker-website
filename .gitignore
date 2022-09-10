@@ -8,6 +8,9 @@ npm-debug.log*
 # Dependency directories
 node_modules/
 
+website1/dist/*.js
+website1/dist/*.png
+
 # Optional npm cache directory
 .npm
 

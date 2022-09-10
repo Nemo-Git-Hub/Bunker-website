@@ -1,0 +1,46 @@
+.autonomy {
+  &-wrapper {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-top: 100px;
+
+    &-description {
+      width: 100%;
+      max-width: 626px;
+      margin-top: 28px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+  &__branches {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px 30px;
+  }
+
+  &__branch {
+    width: 300px;
+
+    &-img {
+      width: 300px;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      margin-top: 28px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 127%;
+    }
+
+    &-description {
+      margin-top: 15px;
+    }
+  }
+}
