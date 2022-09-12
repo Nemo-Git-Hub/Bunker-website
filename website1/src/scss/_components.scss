@@ -59,3 +59,41 @@
   font-size: 18px;
   line-height: 120%;
 }
+
+@media screen and (max-width: 1280px) {
+  .button-active {
+    &__shadow, &__button {
+        margin-left: 15px;
+      }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .button-active {
+    &__button {
+      font-size: 16px;
+      width: 248px;
+      height: 50px;
+    }
+    &__shadow {
+      width: 244px;
+      height: 46px;
+      bottom: 34px
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .button-active {
+    &__button {
+      font-size: 14px;
+      width: 208px;
+      height: 30px;
+    }
+    &__shadow {
+      width: 204px;
+      height: 26px;
+      bottom: 14px;
+    }
+  }
+}
