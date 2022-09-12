@@ -2,7 +2,7 @@
   &__shadow {
     width: 294px;
     height: 66px;
-    border: 2px solid #ffc300;
+    border: 2px solid $yellow;
     position: relative;
     left: 16px;
     bottom: 54px;
@@ -12,7 +12,7 @@
   &__button {
     width: 298px;
     height: 70px;
-    background: #ffc300;
+    background: $yellow;
     font-size: 20px;
     font-weight: 600;
     color: white;
@@ -25,6 +25,37 @@
       transform: translate3d(16px, 16px, 0);
       transition: 0.3s;
     }
+  }
+}
+
+.button-active-second {
+  position: relative;
+  background: #ffc300;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  padding: 16px 30px;
+  cursor: pointer;
+
+  &:hover {
+    &::after {
+      content: "";
+      transform: translate(0, 0);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $yellow;
+    transform: translate(10px, 10px);
+    transition: 0.2s;
   }
 }
 
@@ -62,13 +93,14 @@
 
 @media screen and (max-width: 1280px) {
   .button-active {
-    &__shadow, &__button {
-        margin-left: 15px;
-      }
+    &__shadow,
+    &__button {
+      margin-left: 15px;
+    }
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .button-active {
     &__button {
       font-size: 16px;
@@ -78,12 +110,12 @@
     &__shadow {
       width: 244px;
       height: 46px;
-      bottom: 34px
+      bottom: 34px;
     }
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .button-active {
     &__button {
       font-size: 14px;
