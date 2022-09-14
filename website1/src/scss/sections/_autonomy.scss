@@ -20,8 +20,9 @@
   &__branches {
     margin-top: 60px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 13px 30px;
+    gap: 13px 20px;
   }
 
   &__branch {
