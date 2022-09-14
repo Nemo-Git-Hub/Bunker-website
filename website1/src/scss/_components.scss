@@ -94,8 +94,7 @@
   }
 
   &-description {
-    max-width: 626px;
-    width: 100%;
+    width: 50%;
     line-height: 159%;
     margin-top: 28px;
   }
@@ -121,6 +120,9 @@
     &__header {
       font-size: 32px;
     }
+    &-description{
+      width: 100%;
+    }
   }
   .button-active {
     &__button {
@@ -144,8 +146,6 @@
     }
 
     &-description {
-      max-width: 480px;
-      width: 100%;
       font-size: 16px;
     }
   }
@@ -157,10 +157,6 @@
       font-size: 28px;
     }
 
-    &-description {
-      max-width: 320px;
-      width: 100%;
-    }
   }
   .button-active {
     &__button {
