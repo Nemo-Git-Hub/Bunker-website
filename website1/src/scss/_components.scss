@@ -34,6 +34,7 @@
   }
 }
 
+/* This is button for learn. It is temporary */
 //.button-active-second {
 //  position: relative;
 //  background: #ffc300;
@@ -160,19 +161,18 @@
       max-width: 320px;
       width: 100%;
     }
+  }
+  .button-active {
+    &__button {
+      font-size: 14px;
+      width: 208px;
+      height: 30px;
+    }
 
-    .button-active {
-      &__button {
-        font-size: 14px;
-        width: 208px;
-        height: 30px;
-      }
-
-      &__shadow {
-        width: 204px;
-        height: 26px;
-        bottom: 14px;
-      }
+    &__shadow {
+      width: 204px;
+      height: 26px;
+      bottom: 14px;
     }
   }
 }

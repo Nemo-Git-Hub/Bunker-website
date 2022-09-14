@@ -35,48 +35,46 @@
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .first-page__text {
+    &_narrow, &_wide, &_default20 {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .first-page__text {
+    &_narrow {
+      font-size: 24px;
+    }
+
+    &_wide {
+      font-size: 70px;
+    }
+
+    &_default20 {
+      font-size: 16px;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .first-page-wrapper {
     margin-top: 81px;
   }
+
+  .first-page__text {
+    &_narrow {
+      font-size: 20px;
+    }
+
+    &_wide {
+      font-size: 50px;
+    }
+
+    &_default20 {
+      font-size: 14px;
+    }
+  }
 }
-
-@media screen and (max-width: 1280px) {
-  .first-page__text {
-      &_narrow, &_wide, &_default20 {
-        padding-left: 15px;
-      }
-    }
-  }
-
-@media screen and (max-width: 1000px) {
-  .first-page__text {
-      &_narrow {
-        font-size: 24px;
-      }
-
-      &_wide {
-        font-size: 70px;
-      }
-
-      &_default20 {
-        font-size: 16px;
-      }
-    }
-  }
-
-@media screen and (max-width: 480px) {
-  .first-page__text {
-      &_narrow {
-        font-size: 20px;
-      }
-
-      &_wide {
-        font-size: 50px;
-      }
-
-      &_default20 {
-        font-size: 14px;
-      }
-    }
-  }
