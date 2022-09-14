@@ -12,6 +12,7 @@
   &__button {
     width: 298px;
     height: 70px;
+    padding: 20px 30px;
     background: $yellow;
     font-size: 20px;
     font-weight: 600;
@@ -21,6 +22,11 @@
     border: none;
     cursor: pointer;
 
+    &:hover {
+      background: #D8A600;
+      transition: 0.3s;
+    }
+
     &:active {
       transform: translate3d(16px, 16px, 0);
       transition: 0.3s;
@@ -28,36 +34,45 @@
   }
 }
 
-.button-active-second {
-  position: relative;
-  background: #ffc300;
-  color: white;
-  border: none;
-  font-weight: 600;
-  font-size: 20px;
-  display: inline-block;
-  padding: 16px 30px;
-  cursor: pointer;
+//.button-active-second {
+//  position: relative;
+//  background: #ffc300;
+//  color: white;
+//  border: none;
+//  font-weight: 600;
+//  font-size: 20px;
+//  display: inline-block;
+//  padding: 16px 30px;
+//  cursor: pointer;
 
-  &:hover {
-    &::after {
-      content: "";
-      transform: translate(0, 0);
-    }
-  }
+//&:hover {
+//  &::after {
+//    content: "";
+//    transform: translate3d(0, 0, 0);
+//  }
+//}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid $yellow;
-    transform: translate(10px, 10px);
-    transition: 0.2s;
-  }
-}
+//&:after {
+//  content: "";
+//  position: absolute;
+//  top: -2px;
+//  left: -2px;
+//  width: 100%;
+//  height: 100%;
+//  border: 2px solid $yellow;
+//  transform: translate(10px, 10px);
+//  transition: 0.3s;
+//}
+//&:active{
+//  transform: translate3d(10px, 10px, 0);
+//  transition: 0.3s;
+//  &::after {
+//    content: "";
+//    transform: translate3d(0, 0, 0);
+//    transition: 2s;
+//  }
+//}
+//}
 
 .title {
   margin-left: 0;
@@ -76,13 +91,13 @@
     width: 190px;
     background-color: $yellow;
   }
-}
 
-.title-description {
-  max-width: 626px;
-  width: 100%;
-  line-height: 159%;
-  margin-top: 28px;
+  &-description {
+    max-width: 626px;
+    width: 100%;
+    line-height: 159%;
+    margin-top: 28px;
+  }
 }
 
 .description-text {
@@ -101,12 +116,18 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .title {
+    &__header {
+      font-size: 32px;
+    }
+  }
   .button-active {
     &__button {
       font-size: 16px;
       width: 248px;
       height: 50px;
     }
+
     &__shadow {
       width: 244px;
       height: 46px;
@@ -115,17 +136,43 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .button-active {
-    &__button {
-      font-size: 14px;
-      width: 208px;
-      height: 30px;
+@media screen and (max-width: 768px) {
+  .title {
+    &__header {
+      font-size: 30px;
     }
-    &__shadow {
-      width: 204px;
-      height: 26px;
-      bottom: 14px;
+
+    &-description {
+      max-width: 480px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    &__header {
+      font-size: 28px;
+    }
+
+    &-description {
+      max-width: 320px;
+      width: 100%;
+    }
+
+    .button-active {
+      &__button {
+        font-size: 14px;
+        width: 208px;
+        height: 30px;
+      }
+
+      &__shadow {
+        width: 204px;
+        height: 26px;
+        bottom: 14px;
+      }
     }
   }
 }
