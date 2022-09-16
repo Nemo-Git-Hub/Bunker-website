@@ -38,7 +38,7 @@
   &__description {
     margin-top: 28px;
     font-weight: 300;
-    line-height: 159.02%;
+    line-height: 159%;
     text-align: center;
   }
 
@@ -51,8 +51,8 @@
 
 .icon {
   &__img {
-    position: relative;
-    z-index: 2;
+    //position: relative;
+    z-index: $two;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@
 
   &__ban {
     position: absolute;
-    z-index: 1;
+    z-index: $one;
   }
 }
 
