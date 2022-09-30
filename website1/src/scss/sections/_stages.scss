@@ -4,77 +4,77 @@
     background-color: $white-back;
   }
 
-  &-box {
+  &__box {
     display: flex;
     padding-top: 61px;
+  }
 
-    &__item {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &-number {
       display: flex;
+      align-items: center;
+      color: $yellow;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 127%;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      line-height: 140%;
+      width: 100%;
+      padding-left: 5px;
+      max-width: 216px;
+
+      &-2 {
+        max-width: 562px;
+      }
+    }
+
+    &-arrow {
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+
+      &-2 {
+        display: none;
+      }
     }
   }
 }
 
-.item {
-  &__number {
-    display: flex;
-    align-items: center;
-    color: $yellow;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 127%;
+
+@media screen and (max-width: 1000px) {
+  .stages__box {
+    flex-direction: column;
+    padding-top: 0;
   }
 
-  &__description {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    line-height: 140%;
-    width: 100%;
-    padding-left: 5px;
+  .stages__item-arrow {
+    transform: rotate(90deg);
 
-    &--text-1 {
-      max-width: 197px;
-    }
-
-    &--text-2 {
-      max-width: 562px;
-    }
-
-    &--text-3 {
-      max-width: 216px;
-    }
-
-    &--text-4 {
-      max-width: 207px;
-    }
-
-    &--text-5 {
-      max-width: 168px;
-    }
-  }
-
-  &__arrow {
-    display: flex;
-    align-items: center;
-    padding: 0 28px;
-
-    &--2 {
-      display: none;
+    &-2 {
+      display: block;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .stages-box {
-    flex-direction: column;
-    padding-top: 0;
+  .stages__item-text {
+    font-size: 16px;
   }
+}
 
-  .item__arrow {
-    transform: rotate(90deg);
-
-    &--2 {
-      display: block;
-    }
+@media screen and (max-width: 480px) {
+  .stages__item-number{
+    font-size: 70px;
+  }
+  .stages__item-text {
+    font-size: 16px;
   }
 }
