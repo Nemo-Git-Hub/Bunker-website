@@ -1,0 +1,75 @@
+.main-items-bunker {
+  &-wrapper {
+    width: 100%;
+    background-color: $grey-light;
+  }
+
+
+  &__item-box {
+    //margin: 6.34% 8.6% 8.4% 12.9%;
+    margin: 71px 49px 94px 110px;
+    position: relative;
+  }
+
+  &__item {
+position: relative;
+    &-overlap {
+    }
+
+    &-title {
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 30px;
+      margin-left: 45px;
+    }
+
+    &-text {
+      font-weight: 300;
+      line-height: 22px;
+      margin-top: 5px;
+      margin-left: 45px;
+      &-overlap{
+        max-width: 326px;
+      }
+      &-door{
+        max-width: 475px;
+      }
+      &-hatch{
+        max-width: 360px;
+      }
+      &-ventilation{
+        max-width: 306px;
+      }
+    }
+
+    &-pointer-overlap {
+      position: absolute;
+      top: 81px;
+    }
+
+    &-door {
+    }
+
+    &-pointer-door {
+    }
+
+    &-hatch {
+    }
+
+    &-pointer-hatch {
+    }
+
+    &-ventilation {
+    }
+
+    &-pointer-ventilation {
+
+    }
+  }
+
+  &__img-bunker-plan {
+    position: absolute;
+    top: 167px;
+    left: 160px;
+  }
+}
