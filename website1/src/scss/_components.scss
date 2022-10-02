@@ -91,14 +91,12 @@
 }
 
 .title {
-  width: 50%;
-  margin-left: 0;
-  padding-top: 75px;
   color: $font-color-grey;
 
   &__header {
     text-transform: uppercase;
     font-size: 36px;
+    padding-top: 100px;
   }
 
   &__line {
@@ -113,6 +111,7 @@
   &__description {
     line-height: 159%;
     padding-top: 28px;
+    max-width: 626px;
   }
 }
 

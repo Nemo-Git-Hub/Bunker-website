@@ -4,17 +4,13 @@
     background-color: $grey-light;
   }
 
-
   &__item-box {
-    //margin: 6.34% 8.6% 8.4% 12.9%;
-    margin: 71px 49px 94px 110px;
+    margin: 71px 49px 220px 110px;
     position: relative;
   }
 
   &__item {
-position: relative;
-    &-overlap {
-    }
+    position: absolute;
 
     &-title {
       text-transform: uppercase;
@@ -28,16 +24,20 @@ position: relative;
       line-height: 22px;
       margin-top: 5px;
       margin-left: 45px;
-      &-overlap{
+
+      &-overlap {
         max-width: 326px;
       }
-      &-door{
+
+      &-door {
         max-width: 475px;
       }
-      &-hatch{
+
+      &-hatch {
         max-width: 360px;
       }
-      &-ventilation{
+
+      &-ventilation {
         max-width: 306px;
       }
     }
@@ -48,28 +48,158 @@ position: relative;
     }
 
     &-door {
+      bottom: -120px;
     }
 
     &-pointer-door {
+      position: absolute;
+      bottom: 125px;
     }
 
     &-hatch {
+      margin-left: 698px;
     }
 
     &-pointer-hatch {
+      position: absolute;
+      right: -13px;
+      top: 81px;
     }
 
     &-ventilation {
+      bottom: -76px;
+      margin-left: 615px;
     }
 
     &-pointer-ventilation {
-
+      position: absolute;
+      right: 133px;
+      bottom: 86px;
     }
   }
 
   &__img-bunker-plan {
-    position: absolute;
-    top: 167px;
-    left: 160px;
+    margin-top: 96px;
+    margin-left: 86px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .main-items-bunker {
+
+    &__item-box {
+      margin: 71px 49px 100px 0;
+    }
+
+    &__item {
+      position: relative;
+
+      &-title {
+        font-size: 24px;
+        margin-left: 0;
+      }
+
+      &-text {
+        margin-left: 0;
+        max-width: 626px;
+      }
+
+      &-door {
+        margin-top: 30px;
+        margin-left: 0;
+        bottom: 0;
+      }
+
+      &-hatch {
+        margin-top: 30px;
+        margin-left: 0;
+      }
+
+      &-ventilation {
+        margin-top: 30px;
+        bottom: 0;
+        margin-left: 0;
+      }
+
+      &-pointer-overlap {
+        display: none;
+      }
+
+      &-pointer-door {
+        display: none;
+      }
+
+      &-pointer-hatch {
+        display: none;
+      }
+
+      &-pointer-ventilation {
+        display: none;
+      }
+    }
+
+    &__img-bunker-plan {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-items-bunker {
+
+    &__item-box {
+      margin: 71px 49px 100px 0;
+    }
+
+    &__item {
+      position: relative;
+
+      &-title {
+        font-size: 24px;
+        margin-left: 0;
+      }
+
+      &-text {
+        margin-left: 0;
+        max-width: 626px;
+      }
+
+      &-door {
+        margin-top: 30px;
+        margin-left: 0;
+        bottom: 0;
+      }
+
+      &-hatch {
+        margin-top: 30px;
+        margin-left: 0;
+      }
+
+      &-ventilation {
+        margin-top: 30px;
+        bottom: 0;
+        margin-left: 0;
+      }
+
+      &-pointer-overlap {
+        display: none;
+      }
+
+      &-pointer-door {
+        display: none;
+      }
+
+      &-pointer-hatch {
+        display: none;
+      }
+
+      &-pointer-ventilation {
+        display: none;
+      }
+    }
+
+    &__img-bunker-plan {
+      display: none;
+    }
   }
 }
