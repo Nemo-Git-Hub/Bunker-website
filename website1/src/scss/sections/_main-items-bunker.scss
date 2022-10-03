@@ -42,42 +42,43 @@
       }
     }
 
+    &-overlap {
+      &-pointer {
+        top: 81px;
+      }
+    }
+
     &-door {
       bottom: -120px;
+
+      &-pointer {
+        bottom: 125px;
+      }
     }
 
     &-hatch {
       margin-left: 698px;
+
+      &-pointer {
+        right: -13px;
+        top: 81px;
+      }
     }
 
     &-ventilation {
       bottom: -76px;
       margin-left: 615px;
+
+      &-pointer {
+        right: 133px;
+        bottom: 86px;
+      }
     }
 
     &-pointer {
       position: absolute;
     }
-
-    &-overlap-pointer {
-      top: 81px;
-    }
-
-    &-door-pointer {
-      bottom: 125px;
-    }
-
-    &-hatch-pointer {
-      right: -13px;
-      top: 81px;
-    }
-
-    &-ventilation-pointer {
-      right: 133px;
-      bottom: 86px;
-    }
   }
-
 
   &__img-bunker-plan {
     margin-top: 96px;
