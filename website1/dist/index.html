@@ -48,6 +48,7 @@
       </div>
     </div>
   </header>
+
   <section class="first-page-wrapper">
     <div class="container mx-auto">
       <div class="first-page__content">
@@ -193,7 +194,6 @@
       </div>
     </div>
   </section>
-
   <section class="main-items-bunker main-items-bunker-wrapper">
     <div class="container mx-auto">
 
@@ -214,12 +214,12 @@
             уламків
           </p>
           <img src="../src/assets/icons/pointer-overlap.svg" alt="pointer-overlap"
-               class="main-items-bunker__item-pointer-overlap">
+               class="main-items-bunker__item-pointer main-items-bunker__item-overlap-pointer">
         </div>
 
         <div class="main-items-bunker__item main-items-bunker__item-door">
           <img src="../src/assets/icons/pointer-door.svg" alt="pointer-door"
-               class="main-items-bunker__item-pointer-door">
+               class="main-items-bunker__item-pointer main-items-bunker__item-door-pointer">
           <p class="main-items-bunker__item-title">двері</p>
           <p class="main-items-bunker__item-text main-items-bunker__item-text-door">
             Герметичні основні двері з металокаркасу та монолітного бетону – захистить від куль, вибухових хвиль,
@@ -235,7 +235,7 @@
             на відстані від входу в закритому колодязі з драбиною
           </p>
           <img src="../src/assets/icons/pointer-hatch.svg" alt="pointer-hatch"
-               class="main-items-bunker__item-pointer-hatch">
+               class="main-items-bunker__item-pointer main-items-bunker__item-hatch-pointer">
         </div>
 
         <div class="main-items-bunker__item main-items-bunker__item-ventilation">
@@ -244,7 +244,7 @@
             постійна притока свіжого повітря для підтримки комфортного мікроклімату в приміщенні
           </p>
           <img src="../src/assets/icons/pointer-ventilation.svg" alt="pointer-ventilation"
-               class="main-items-bunker__item-pointer-ventilation">
+               class="main-items-bunker__item-pointer main-items-bunker__item-ventilation-pointer">
         </div>
 
         <img
@@ -255,17 +255,16 @@
       </div>
     </div>
   </section>
-
   <section class="autonomy-wrapper">
     <div class="container mx-auto">
       <div class="autonomy">
         <div class="autonomy__title title">
-            <p class="title__header">Автономність</p>
-            <hr class="title__line"/>
-            <p class="title__description">
-              У стані простою приміщення бере ресурси від вашого будинку і в
-              потрібний момент стає автономним
-            </p>
+          <p class="title__header">Автономність</p>
+          <hr class="title__line"/>
+          <p class="title__description">
+            У стані простою приміщення бере ресурси від вашого будинку і в
+            потрібний момент стає автономним
+          </p>
         </div>
         <div class="autonomy__branches">
           <div class="autonomy__branch">
@@ -550,8 +549,21 @@
     </div>
   </section>
 
-  <footer id="footer" class="footer">
-    <div class="container"></div>
+  <footer id="footer" class="footer footer-wrapper">
+
+      <div class="container mx-auto">
+        <div class="footer-content">
+          <div class="footer-content__left">
+            <p class="footer-content__company">ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС", 2022</p>
+            <p class="footer-content__copyright">©</p>
+            <p class="footer-content__rights">Всі права захищені</p>
+          </div>
+
+          <div class="footer-content__right">
+            <a href="#" class="footer-content__confidentiality">Політика конфіденційності</a>
+          </div>
+        </div>
+      </div>
   </footer>
 </div>
 
