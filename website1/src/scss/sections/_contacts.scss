@@ -3,6 +3,7 @@
     width: 100%;
     background-color: $white-back;
 
+
     &_grey {
       width: 100%;
       background: $grey-light;
@@ -11,13 +12,12 @@
 
   &__title {
     margin-bottom: 68px;
-    position: relative;
   }
 
   &__callback {
     position: absolute;
-    top: 156px;
-    left: 515px;
+    top: -565px;
+    left: 475px;
     max-width: 849px;
     padding: 52px 70px 69px 80px;
     background: $white;
@@ -92,6 +92,12 @@
 }
 
 .contact {
+  &__footer{
+    .container{
+      position: relative;
+    }
+
+  }
   &__company {
     padding-top: 84px;
     padding-bottom: 25px;
@@ -104,6 +110,13 @@
       max-width: 308px;
       font-size: 24px;
       line-height: 30px;
+      //text-decoration: underline;
+      .underline-text {
+        background-image: linear-gradient(to right, $font-color-grey 0%, $font-color-grey 100%);
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        background-size: 100% 2px;
+      }
     }
   }
 
@@ -149,6 +162,8 @@
     &-text {
       font-size: 24px;
       line-height: 127%;
+      display: inline;
+      border-bottom: 2px solid $font-color-grey;
     }
   }
 
@@ -159,11 +174,11 @@
 
     &--svg {
       cursor: pointer;
+      transition: 0.3s;
 
       &:hover {
         path {
           fill: $font-color-grey;
-          transition: 0.3s;
         }
       }
     }
@@ -172,14 +187,14 @@
   &__footer {
     width: 100%;
     background-color: $white-back;
-    height: 176px;
+    min-height: 176px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .contacts {
     &__callback {
-      left: 400px;
+      position: static;
 
       &-name-phone {
         flex-wrap: wrap;
@@ -205,15 +220,6 @@
         font-size: 18px;
         height: 40px;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contacts {
-    &__callback {
-      top: 721px;
-      left: 15px;
     }
   }
 }
