@@ -1,0 +1,219 @@
+.contacts {
+  &-wrapper {
+    width: 100%;
+    background-color: $white-back;
+
+    &_grey {
+      background-color: $grey-light;
+    }
+  }
+
+  &__title {
+    margin-bottom: 68px;
+  }
+
+  &__callback {
+    position: absolute;
+    top: -565px;
+    left: 475px;
+    max-width: 849px;
+    padding: 52px 70px 69px 80px;
+    background: $white;
+    z-index: $z-index-contact-form;
+    box-shadow: 0 7px 24px rgba(164, 151, 120, 0.17);
+
+    &-title {
+      font-size: 24px;
+      line-height: 127%;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &-subtitle {
+      max-width: 371px;
+      font-weight: 300;
+      line-height: 23px;
+      margin-bottom: 53px;
+    }
+
+    &-form {
+      font-weight: 300;
+      line-height: 22px;
+      height: 60px;
+      padding-left: 30px;
+      font-size: 18px;
+      border: 1px solid $white-form;
+      margin-bottom: 16px;
+    }
+
+    &-name {
+      width: 48%;
+      min-width: 147px;
+
+      &-phone {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &-phone {
+      width: 48%;
+      min-width: 147px;
+    }
+
+    &-mail {
+      width: 100%;
+    }
+
+    &-text {
+      width: 100%;
+      min-height: 201px;
+      padding-top: 27px;
+      font-family: 'Source Sans Pro';
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+
+    &-button {
+      border: 2px solid $yellow;
+      height: 60px;
+      width: 100%;
+      background: $yellow;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 32px;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact {
+  &__footer{
+    .container{
+      position: relative;
+    }
+
+  }
+  &__company {
+    padding-top: 84px;
+    padding-bottom: 25px;
+  }
+
+  &__address {
+    display: flex;
+
+    &-text {
+      max-width: 308px;
+      font-size: 24px;
+      line-height: 30px;
+      .underline-text {
+        background-image: linear-gradient(to right, $font-color-grey 0%, $font-color-grey 100%);
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  &__icon {
+    padding-right: 19px;
+  }
+
+  &__phone {
+    display: flex;
+    margin-top: 26px;
+
+    &-text {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__schedule {
+    display: flex;
+    font-weight: 300;
+    line-height: 23px;
+  }
+
+  &__opening-hours {
+    margin: 0 42px 36px 43px;
+  }
+
+  &__mail {
+    display: flex;
+
+    &-text {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__license {
+    display: flex;
+    margin-top: 30px;
+
+    &-text {
+      font-size: 24px;
+      line-height: 127%;
+      display: inline;
+      border-bottom: 2px solid $font-color-grey;
+    }
+  }
+
+  &-facebook {
+    margin-top: 36px;
+    margin-left: 43px;
+
+    &--svg {
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        path {
+          fill: $font-color-grey;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    background-color: $white-back;
+    min-height: 176px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts {
+    &__callback {
+      position: static;
+
+      &-name-phone {
+        flex-wrap: wrap;
+      }
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-subtitle {
+        font-size: 21px;
+      }
+
+      &-name {
+        width: 100%;
+      }
+
+      &-phone {
+        width: 100%;
+      }
+
+      &-button {
+        font-size: 18px;
+        height: 40px;
+      }
+    }
+  }
+}
