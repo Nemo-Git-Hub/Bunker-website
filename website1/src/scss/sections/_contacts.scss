@@ -3,10 +3,8 @@
     width: 100%;
     background-color: $white-back;
 
-
     &_grey {
-      width: 100%;
-      background: $grey-light;
+      background-color: $grey-light;
     }
   }
 
@@ -110,7 +108,6 @@
       max-width: 308px;
       font-size: 24px;
       line-height: 30px;
-      //text-decoration: underline;
       .underline-text {
         background-image: linear-gradient(to right, $font-color-grey 0%, $font-color-grey 100%);
         background-repeat: repeat-x;
@@ -124,7 +121,6 @@
     padding-right: 19px;
   }
 
-
   &__phone {
     display: flex;
     margin-top: 26px;
@@ -134,7 +130,6 @@
       line-height: 30px;
     }
   }
-
 
   &__schedule {
     display: flex;
@@ -166,7 +161,6 @@
       border-bottom: 2px solid $font-color-grey;
     }
   }
-
 
   &-facebook {
     margin-top: 36px;
