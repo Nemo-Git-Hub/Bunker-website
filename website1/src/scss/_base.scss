@@ -7,6 +7,10 @@ body {
   color: $font-color-grey;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }

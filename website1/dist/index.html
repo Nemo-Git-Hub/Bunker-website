@@ -43,7 +43,7 @@
         </ul>
         <div class="header-nav__actions">
           <a href="#" class="language">UA</a>
-          <button class="btn_color">Зателефонуйте мені</button>
+          <button class="btn_color trigger-modal">Зателефонуйте мені</button>
         </div>
       </div>
     </div>
@@ -62,14 +62,10 @@
           Безпека під час бойових дій та стихийних лих
         </p>
         <div class="button-active">
-          <button class="button-active__button">
+          <button class="button-active__button trigger-modal">
             Замовити консультацію
           </button>
           <div class="button-active__shadow"></div>
-          <!-- This is button for learn. It is temporary -->
-          <!--              <button class="first-page__content-item button-active-second">-->
-          <!--                Test Button-->
-          <!--              </button>-->
         </div>
 
       </div>
@@ -177,7 +173,7 @@
           </div>
           <div class="button-protection-family">
             <div class="button_active">
-              <button class="button-active__button">
+              <button class="button-active__button trigger-modal">
                 Дізнатись детальніше
               </button>
               <div class="button-active__shadow"></div>
@@ -375,7 +371,7 @@
             </p>
           </div>
           <div class="button-prevent">
-            <button class="btn_color prevent">Як запобігти?</button>
+            <button class="btn_color prevent trigger-modal">Як запобігти?</button>
           </div>
         </div>
         <div class="what-is-bad__remedies">
@@ -665,6 +661,19 @@
   </footer>
 </div>
 
+<div class="modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content mx-auto">
+    <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
+    <div class="modal__title">залиште свої контактні данні</div>
+    <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
+      і проконсультує з будь-яких питань
+    </div>
+    <input class="modal__input" type="text" placeholder="Ім'я*">
+    <input class="modal__input" type="number" placeholder="Номер телефону*">
+    <button class="modal__btn-request">Відправити запит</button>
+  </div>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

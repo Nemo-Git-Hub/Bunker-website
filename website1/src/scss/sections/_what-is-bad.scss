@@ -51,7 +51,7 @@
 
 .icon {
   &__img {
-    z-index: $two;
+    z-index: $z-index-icon-img;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@
 
   &__ban {
     position: absolute;
-    z-index: $one;
+    z-index: $z-index-icon-ban;
   }
 }
 
