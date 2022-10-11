@@ -63,6 +63,10 @@
   }
 }
 
+.wifi-img{
+  transform: rotate(45deg);
+}
+
 @media screen and (max-width: 768px) {
   .what-is-bad__title {
     flex-direction: column;

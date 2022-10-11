@@ -19,32 +19,39 @@
   <header id="header" class="header">
     <div class="container">
       <div class="header-nav">
-        <div class="header-nav__logo">
-          <img
-              class="logo_company"
-              src="../src/assets/img/logo.png"
-              alt="logo_company"
-          />
-          <p class="name_company">ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС"</p>
+        <div class="header-nav__menu-icon">
+          <span></span>
         </div>
-        <ul class="header-nav__menu header-menu">
-          <li class="header-menu__link">
-            <a href="#"> Елементи сховища </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Автономність </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Етапи роботи </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Контакти </a>
-          </li>
-        </ul>
+        <div class="header-nav__body">
+          <div class="header-nav__logo">
+            <img
+                class="logo_company"
+                src="../src/assets/img/logo.png"
+                alt="logo_company"
+            />
+            <a class="name_company header-menu__link" data-goto=".first-page-wrapper" href="#">ТОВ
+              "ГРАНД-СТРОЙ-АЛЬЯНС"</a>
+          </div>
+          <ul class="header-nav__menu header-menu">
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".main-items-bunker" href="#"> Елементи сховища </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".autonomy" href="#"> Автономність </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".stages" href="#"> Етапи співпраці </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".contacts" href="#"> Контакти </a>
+            </li>
+          </ul>
+        </div>
         <div class="header-nav__actions">
           <a href="#" class="language">UA</a>
           <button class="btn_color trigger-modal">Зателефонуйте мені</button>
         </div>
+
       </div>
     </div>
   </header>
@@ -438,7 +445,7 @@
           <div class="remedies-box">
             <div class="remedies-box__icon">
               <img
-                  class="icon__img"
+                  class="icon__img wifi-img"
                   src="../src/assets/icons/wifi.svg"
                   alt="wifi icon"
               />

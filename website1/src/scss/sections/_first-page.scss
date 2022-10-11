@@ -4,6 +4,7 @@
     background: url("../assets/img/section1-img1.png") top / cover no-repeat;
     padding-top: 214px;
     padding-bottom: 130px;
+    margin-top: 81px;
   }
 
   &__content {
@@ -56,6 +57,9 @@
     &_default20 {
       font-size: 16px;
     }
+  }
+  .button-active__button {
+    font-size: 15px;
   }
 }
 
