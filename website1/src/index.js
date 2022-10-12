@@ -2,14 +2,15 @@ import './scss/main.scss'
 
 // Modal window
 const modal = document.querySelector(".modal");
+const modalBody = document.querySelector(".modal__body");
 const modalOverlay = document.querySelector(".modal__overlay");
 const triggers = document.querySelectorAll(".trigger-modal");
 const closeButton = document.querySelector(".modal__close-button");
-const body = document.querySelector("body");
 
 function toggleModal() {
-	modal.classList.toggle("show-modal");
-	body.classList.toggle("lock");
+	modal.classList.toggle("modal");
+	modalBody.classList.toggle("show-modal");
+	document.body.classList.toggle("lock");
 }
 
 function windowOnClick(event) {
@@ -32,14 +33,18 @@ if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);
 	});
-
-	function onMenuLinkClick(e) {
-		const menuLink = e.target;
-		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+	
+	function onMenuLinkClick(event) {
+		const menuLink = event.target
+		const gotoBlock = document.querySelector(menuLink.dataset.goto);
+		
+		
+		if (menuLink.dataset.goto && gotoBlock) {
+			event.preventDefault();
+			
 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
 			
-			if (iconMenu.classList.contains('active')){
+			if (iconMenu.classList.contains('active')) {
 				document.body.classList.remove("lock");
 				iconMenu.classList.remove("active");
 				menuBody.classList.remove("active");
@@ -49,7 +54,7 @@ if (menuLinks.length > 0) {
 				top: gotoBlockValue,
 				behavior: "smooth"
 			});
-			e.preventDefault();
+			
 		}
 	}
 }
@@ -58,11 +63,8 @@ if (menuLinks.length > 0) {
 
 const iconMenu = document.querySelector('.header-nav__menu-icon');
 const menuBody = document.querySelector('.header-nav__body');
-if (iconMenu) {
-	iconMenu.addEventListener("click", function (e) {
-		document.body.classList.toggle("lock");
-		iconMenu.classList.toggle("active");
-		menuBody.classList.toggle("active");
-
-	})
-}
+iconMenu?.addEventListener("click", () => {
+	document.body.classList.toggle("lock");
+	iconMenu.classList.toggle("active");
+	menuBody.classList.toggle("active");
+})

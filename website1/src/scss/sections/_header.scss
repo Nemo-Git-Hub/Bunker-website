@@ -65,7 +65,7 @@
 
   .header-nav__actions {
     .language {
-      margin-right: 20px;
+      margin-right: 15px;
     }
   }
 }
@@ -81,7 +81,6 @@
         top: 0;
         left: -100%;
         width: 100%;
-        height: 100%;
         background-color: $grey-light;
         padding: 100px 30px 30px 30px;
         transition: left 0.3s ease 0s;
@@ -113,7 +112,7 @@
           height: 20px;
           cursor: pointer;
 
-          & span, &::before, &::after{
+          &-body, &::before, &::after{
           left: 0;
           position: absolute;
           height: 10%;
@@ -134,7 +133,7 @@
             bottom: 0;
           }
 
-          & span {
+          &-body {
             top: 50%;
             transform: scale(1) translate(0px, -50%);
           }
