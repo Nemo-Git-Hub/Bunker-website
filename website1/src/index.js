@@ -2,14 +2,12 @@ import './scss/main.scss'
 
 // Modal window
 const modal = document.querySelector(".modal");
-const modalBody = document.querySelector(".modal__body");
 const modalOverlay = document.querySelector(".modal__overlay");
 const triggers = document.querySelectorAll(".trigger-modal");
 const closeButton = document.querySelector(".modal__close-button");
 
 function toggleModal() {
-	modal.classList.toggle("modal");
-	modalBody.classList.toggle("show-modal");
+	modal.classList.toggle("show-modal");
 	document.body.classList.toggle("lock");
 }
 
