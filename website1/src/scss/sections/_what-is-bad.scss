@@ -23,10 +23,6 @@
   margin-top: 100px;
 }
 
-.prevent {
-  padding: 9px 74px;
-}
-
 .remedies-box {
   display: flex;
   flex-direction: column;
@@ -61,6 +57,10 @@
     position: absolute;
     z-index: $z-index-icon-ban;
   }
+}
+
+.wifi-img{
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 768px) {

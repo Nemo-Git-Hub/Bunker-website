@@ -19,32 +19,39 @@
   <header id="header" class="header">
     <div class="container">
       <div class="header-nav">
-        <div class="header-nav__logo">
-          <img
-              class="logo_company"
-              src="../src/assets/img/logo.png"
-              alt="logo_company"
-          />
-          <p class="name_company">ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС"</p>
+        <div class="header-nav__menu-icon">
+          <span class="header-nav__menu-icon-body"></span>
         </div>
-        <ul class="header-nav__menu header-menu">
-          <li class="header-menu__link">
-            <a href="#"> Елементи сховища </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Автономність </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Етапи роботи </a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#"> Контакти </a>
-          </li>
-        </ul>
+        <div class="header-nav__body">
+          <div class="header-nav__logo">
+            <img
+                class="logo_company"
+                src="../src/assets/img/logo.png"
+                alt="logo_company"
+            />
+            <a class="name_company header-menu__link" data-goto=".first-page-wrapper" href="#">ТОВ
+              "ГРАНД-СТРОЙ-АЛЬЯНС"</a>
+          </div>
+          <ul class="header-nav__menu header-menu">
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".main-items-bunker" href="#"> Елементи сховища </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".autonomy" href="#"> Автономність </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".stages" href="#"> Етапи співпраці </a>
+            </li>
+            <li class="header-menu__link">
+              <a class="header-menu__link" data-goto=".contacts" href="#"> Контакти </a>
+            </li>
+          </ul>
+        </div>
         <div class="header-nav__actions">
           <a href="#" class="language">UA</a>
           <button class="btn_color trigger-modal">Зателефонуйте мені</button>
         </div>
+
       </div>
     </div>
   </header>
@@ -438,7 +445,7 @@
           <div class="remedies-box">
             <div class="remedies-box__icon">
               <img
-                  class="icon__img"
+                  class="icon__img wifi-img"
                   src="../src/assets/icons/wifi.svg"
                   alt="wifi icon"
               />
@@ -662,18 +669,19 @@
 </div>
 
 <div class="modal">
-  <div class="modal__overlay"></div>
-  <div class="modal__content mx-auto">
-    <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
-    <div class="modal__title">залиште свої контактні данні</div>
-    <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
-      і проконсультує з будь-яких питань
+    <div class="modal__overlay"></div>
+    <div class="modal__content mx-auto">
+      <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
+      <div class="modal__title">залиште свої контактні данні</div>
+      <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
+        і проконсультує з будь-яких питань
+      </div>
+      <input class="modal__input" type="text" placeholder="Ім'я*">
+      <input class="modal__input" type="number" placeholder="Номер телефону*">
+      <button class="modal__btn-request">Відправити запит</button>
     </div>
-    <input class="modal__input" type="text" placeholder="Ім'я*">
-    <input class="modal__input" type="number" placeholder="Номер телефону*">
-    <button class="modal__btn-request">Відправити запит</button>
-  </div>
 </div>
+
 <script src="main.js"></script>
 </body>
 </html>
