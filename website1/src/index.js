@@ -1,4 +1,55 @@
-import './scss/main.scss'
+import './scss/main.scss';
+
+const swiper = new Swiper('.swiper', {
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		type: 'bullets',
+		slideToClickedSlide: true,
+	},
+	
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
+	
+	mousewheel: {
+		sensitivity: 1,
+		eventsTarget: ".swiper-slide",
+	},
+	
+	slidesPerView: 3.2,
+	slidesPerGroup: 1,
+	initialSlide: 1,
+	spaceBetween: 30,
+	centeredSlides: true,
+	freeMode: true,
+	
+	breakpoints: {
+		20: {slidesPerView: 1,},
+		480: {slidesPerView: 2,},
+		1000: {slidesPerView: 3,},
+		1290: {slidesPerView: 3.2,}
+	},
+	
+	preloadImages: false,
+	
+	lazy: {
+		loadOnTransitionStart: false,
+		loadPrevNext: true,
+	},
+	
+	watchSlidesProgress: true,
+	watchSlidesVisibility: true,
+})
+
 
 // Modal window
 const modal = document.querySelector(".modal");
@@ -40,7 +91,7 @@ if (menuLinks.length > 0) {
 		if (menuLink.dataset.goto && gotoBlock) {
 			event.preventDefault();
 			
-			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
 			
 			if (iconMenu.classList.contains('active')) {
 				document.body.classList.remove("lock");
@@ -52,7 +103,6 @@ if (menuLinks.length > 0) {
 				top: gotoBlockValue,
 				behavior: "smooth"
 			});
-			
 		}
 	}
 }
@@ -62,7 +112,6 @@ if (menuLinks.length > 0) {
 const iconMenu = document.querySelector('.header-nav__menu-icon');
 const menuBody = document.querySelector('.header-nav__body');
 iconMenu?.addEventListener("click", () => {
-	document.body.classList.toggle("lock");
 	iconMenu.classList.toggle("active");
 	menuBody.classList.toggle("active");
 })

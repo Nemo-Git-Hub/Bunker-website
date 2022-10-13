@@ -1,10 +1,12 @@
 .header {
-  width: 100%;
-  max-width: 1440px;
+  &-wrapper {
+    width: 100%;
+    background-color: $white-back;
+  }
+
   display: flex;
   justify-content: center;
   position: fixed;
-  background: $white-back;
   z-index: $z-index-header;
 
   &-nav {
@@ -86,7 +88,7 @@
         transition: left 0.3s ease 0s;
         overflow: auto;
 
-        &.active{
+        &.active {
           left: 0;
         }
 
@@ -112,16 +114,16 @@
           height: 20px;
           cursor: pointer;
 
-          &-body, &::before, &::after{
-          left: 0;
-          position: absolute;
-          height: 10%;
-          width: 100%;
-          transition: all 0.3s ease 0s;
-          background-color: $font-color-grey;
+          &-body, &::before, &::after {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: $font-color-grey;
           }
 
-          &::before, &::after{
+          &::before, &::after {
             content: '';
           }
 
@@ -129,7 +131,7 @@
             top: 0;
           }
 
-          &::after{
+          &::after {
             bottom: 0;
           }
 

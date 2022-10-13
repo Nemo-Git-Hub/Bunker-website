@@ -1,0 +1,67 @@
+.swiper-section {
+  &-wrapper {
+    width: 100%;
+    background-color: $grey-light;
+  }
+}
+
+.swiper {
+  padding: 54px 0 122px 0;
+
+  &__navigation {
+    position: relative;
+    display: flex;
+    margin-top: 66px;
+  }
+
+  &-pagination {
+    bottom: -30px !important;
+
+    &-bullet {
+      width: 13px;
+      height: 13px;
+
+      &-active {
+        position: relative;
+        background-color: $yellow;
+        border-radius: 50%;
+
+        &::before {
+          content: '';
+          top: -3px;
+          left: -3px;
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          border: 1px solid $yellow;
+          border-radius: 50%;
+        }
+      }
+    }
+
+  }
+
+  &-slide-img {
+    max-width: 100%;
+  }
+
+  &-button {
+    &-prev {
+      left: calc(50% - 140px);
+    }
+
+    &-next {
+      right: calc(50% - 140px);
+    }
+
+    &-prev, &-next {
+      top: 21px;
+
+      &:hover {
+        path {
+          fill: $yellow;
+        }
+      }
+    }
+  }
+}
