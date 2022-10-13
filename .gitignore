@@ -10,6 +10,7 @@ node_modules/
 
 website1/dist/*.js
 website1/dist/*.png
+website1/dist/*.css
 
 # Optional npm cache directory
 .npm

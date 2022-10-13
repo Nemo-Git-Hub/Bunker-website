@@ -1,12 +1,12 @@
-.swiper-section {
-  &-wrapper {
-    width: 100%;
-    background-color: $grey-light;
-  }
-}
-
 .swiper {
   padding: 54px 0 122px 0;
+
+  &-section {
+    &-wrapper {
+      width: 100%;
+      background-color: $grey-light;
+    }
+  }
 
   &__navigation {
     position: relative;

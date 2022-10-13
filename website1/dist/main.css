@@ -1100,13 +1100,12 @@ a {
   display: block;
 }
 
+.swiper {
+  padding: 54px 0 122px 0;
+}
 .swiper-section-wrapper {
   width: 100%;
   background-color: #f2efe9;
-}
-
-.swiper {
-  padding: 54px 0 122px 0;
 }
 .swiper__navigation {
   position: relative;
