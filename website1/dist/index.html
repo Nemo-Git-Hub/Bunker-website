@@ -12,11 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
       rel="stylesheet"
   />
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
+
 <div class="wrapper">
-  <header id="header" class="header">
+  <header id="header" class="header header-wrapper">
     <div class="container">
       <div class="header-nav">
         <div class="header-nav__menu-icon">
@@ -55,7 +61,6 @@
       </div>
     </div>
   </header>
-
   <section class="first-page-wrapper">
     <div class="container mx-auto">
       <div class="first-page__content">
@@ -465,7 +470,79 @@
       </div>
     </div>
   </section>
+  <section class="swiper-section-wrapper">
+    <div class="container mx-auto">
+      <div class="swiper__title title">
+        <p class="title__header">наші останні роботи</p>
+        <hr class="title__line"/>
+      </div>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-1.png" alt="slide-1">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-2.png" alt="slide-2">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-3.png" alt="slide-3">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-4.jpg" alt="slide-4">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-5.jpg" alt="slide-5">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-6.jpg" alt="slide-6">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-7.jpg" alt="slide-7">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
+               data-src="../src/assets/img/swiper-slides/slide-8.jpg" alt="slide-8">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+      </div>
 
+      <div class="swiper__navigation">
+        <div class="swiper-pagination">
+          <svg class="swiper-pagination-bullet" width="13" height="13" viewBox="0 0 13 13" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9"/>
+          </svg>
+        </div>
+        <svg class="swiper-button-prev" width="30" height="30" viewBox="0 0 30 30" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M8.91369 22.8882L10.2395 21.5624L4.61467 15.9376L29.0625 15.9376L29.0625 14.0625L4.61484 14.0625L10.2395 8.43785L8.91369 7.11205L1.02551 15.0001L8.91369 22.8882Z"
+              fill="#4F4A45"/>
+        </svg>
+        <svg class="swiper-button-next" width="30" height="30" viewBox="0 0 30 30" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M21.0863 7.11182L19.7605 8.43762L25.3853 14.0624H0.9375V15.9375H25.3852L19.7605 21.5621L21.0863 22.8879L28.9745 14.9999L21.0863 7.11182Z"
+              fill="#4F4A45"/>
+        </svg>
+      </div>
+    </div>
+  </section>
   <section class="stages stages-wrapper">
     <div class="container mx-auto">
 
@@ -552,8 +629,6 @@
 
     </div>
   </section>
-
-
   <section class="contacts contacts-wrapper">
 
     <div class="container mx-auto">
@@ -649,8 +724,6 @@
     </div>
 
   </section>
-
-
   <footer id="footer" class="footer footer-wrapper">
 
     <div class="container mx-auto">
@@ -669,19 +742,19 @@
 </div>
 
 <div class="modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__content mx-auto">
-      <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
-      <div class="modal__title">залиште свої контактні данні</div>
-      <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
-        і проконсультує з будь-яких питань
-      </div>
-      <input class="modal__input" type="text" placeholder="Ім'я*">
-      <input class="modal__input" type="number" placeholder="Номер телефону*">
-      <button class="modal__btn-request">Відправити запит</button>
+  <div class="modal__overlay"></div>
+  <div class="modal__content mx-auto">
+    <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
+    <div class="modal__title">залиште свої контактні данні</div>
+    <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
+      і проконсультує з будь-яких питань
     </div>
+    <input class="modal__input" type="text" placeholder="Ім'я*">
+    <input class="modal__input" type="number" placeholder="Номер телефону*">
+    <button class="modal__btn-request">Відправити запит</button>
+  </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
