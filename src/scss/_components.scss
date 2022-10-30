@@ -1,0 +1,149 @@
+.button-active {
+  &__shadow {
+    width: 294px;
+    height: 66px;
+    border: 2px solid $yellow;
+    position: relative;
+    left: 16px;
+    bottom: 54px;
+    z-index: $z-index-button-active-shadow;
+  }
+
+  &__button {
+    width: 298px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $yellow;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    z-index: $z-index-button-active;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.3s;
+      transform: translate3d(16px, 16px, 0);
+    }
+  }
+}
+
+.btn_color {
+  border: 2px solid $yellow;
+  width: 194px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  padding: 10px 14px;
+  background-color: $white;
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: $yellow;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.title {
+  color: $font-color-grey;
+
+  &__header {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-top: 100px;
+  }
+
+  &__line {
+    border: none;
+    margin-left: 0;
+    margin-top: 10px;
+    height: 4px;
+    width: 190px;
+    background-color: $yellow;
+  }
+
+  &__description {
+    line-height: 159%;
+    padding-top: 28px;
+    max-width: 626px;
+  }
+}
+
+.description-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 1280px) {
+  .button-active {
+    &__shadow,
+    &__button {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    width: 100%;
+
+    &__header {
+      font-size: 32px;
+    }
+
+    &-description {
+      width: 100%;
+    }
+  }
+  .button-active {
+    &__button {
+      font-size: 16px;
+      width: 248px;
+      height: 50px;
+    }
+
+    &__shadow {
+      width: 244px;
+      height: 46px;
+      bottom: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    &__header {
+      font-size: 30px;
+    }
+
+    &-description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    &__header {
+      font-size: 28px;
+    }
+
+  }
+  .button-active {
+    &__button {
+      font-size: 14px;
+      width: 208px;
+      height: 30px;
+    }
+
+    &__shadow {
+      width: 204px;
+      height: 26px;
+      bottom: 14px;
+    }
+  }
+}

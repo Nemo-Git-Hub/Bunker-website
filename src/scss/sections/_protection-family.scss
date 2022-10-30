@@ -1,0 +1,54 @@
+.protection-family {
+  &-wrapper {
+    width: 100%;
+    background-color: $white-back;
+  }
+
+  &__title {
+    max-width: 50%;
+  }
+
+  & {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
+    &__description {
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+
+    .button-protection-family {
+      margin-top: 54px;
+    }
+  }
+
+  &-img {
+    position: relative;
+    padding-top: 100px;
+
+    .img-family {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: top;
+    }
+  }
+}
+.title__protection{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .description-text {
+    font-size: 16px;
+  }
+  .protection-family {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      max-width: 100%;
+    }
+  }
+}

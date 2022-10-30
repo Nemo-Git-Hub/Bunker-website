@@ -1,0 +1,20 @@
+@import "reset";
+
+/* CONFIGURATION */
+@import "variables";
+@import "base";
+@import "components";
+
+/* SECTIONS */
+@import "sections/header";
+@import "sections/first-page";
+@import "sections/appointment-bunker";
+@import "sections/protection-family";
+@import "sections/autonomy";
+@import "sections/what-is-bad";
+@import "sections/stages";
+@import "sections/main-items-bunker";
+@import "sections/contacts";
+@import "sections/footer";
+@import "sections/modal";
+@import "sections/swiper";
