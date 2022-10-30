@@ -1,760 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta
+  <head>
+    <meta charset="UTF-8" />
+    <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-  />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Website 1</title>
-  <link
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website 1</title>
+    <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
       rel="stylesheet"
-  />
-  <link
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="main.css">
-</head>
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
-
-<div class="wrapper">
-  <header id="header" class="header header-wrapper">
-    <div class="container">
-      <div class="header-nav">
-        <div class="header-nav__menu-icon">
-          <span class="header-nav__menu-icon-body"></span>
-        </div>
-        <div class="header-nav__body">
-          <div class="header-nav__logo">
-            <img
-                class="logo_company"
-                src="../src/assets/img/logo.png"
-                alt="logo_company"
-            />
-            <a class="name_company header-menu__link" data-goto=".first-page-wrapper" href="#">ТОВ
-              "ГРАНД-СТРОЙ-АЛЬЯНС"</a>
-          </div>
-          <ul class="header-nav__menu header-menu">
-            <li class="header-menu__link">
-              <a class="header-menu__link" data-goto=".main-items-bunker" href="#"> Елементи сховища </a>
-            </li>
-            <li class="header-menu__link">
-              <a class="header-menu__link" data-goto=".autonomy" href="#"> Автономність </a>
-            </li>
-            <li class="header-menu__link">
-              <a class="header-menu__link" data-goto=".stages" href="#"> Етапи співпраці </a>
-            </li>
-            <li class="header-menu__link">
-              <a class="header-menu__link" data-goto=".contacts" href="#"> Контакти </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-nav__actions">
-          <a href="#" class="language">UA</a>
-          <button class="btn_color trigger-modal">Зателефонуйте мені</button>
-        </div>
-
-      </div>
-    </div>
-  </header>
-  <section class="first-page-wrapper">
-    <div class="container mx-auto">
-      <div class="first-page__content">
-        <p class="first-page__content-item first-page__text_narrow">
-          БУДІВНИЦТВО ІНДИВІДУАЛЬНОГО
-        </p>
-        <p class="first-page__content-item first-page__text_wide">
-          СХОВИЩА
-        </p>
-        <p class="first-page__content-item first-page__text_default20">
-          Безпека під час бойових дій та стихийних лих
-        </p>
-        <div class="button-active">
-          <button class="button-active__button trigger-modal">
-            Замовити консультацію
-          </button>
-          <div class="button-active__shadow"></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <section class="appointment-bunker-wrapper">
-    <div class="container mx-auto">
-      <div class="appointment-bunker">
-        <div class="title">
-          <p class="title__header">Призначення бункера</p>
-          <hr class="title__line"/>
-
-          <p class="title__description">
-            Власний бункер запезпечить Вам відчуття безпеки і у момент
-            небезпечних ситуацій <span class="text-bold">врятує Вас</span> і
-            Вашу родину від:
-          </p>
-        </div>
-        <div class="threat-box">
-          <div class="threat">
-            <img
-                class="threat__icon"
-                src="../src/assets/icons/bullets.svg"
-                alt="icon bullets"
-            />
-            <p class="threat__name">Повномасштабних воєнних дій</p>
-            <p class="threat__description">
-              Захищає від стрілецької зброї - автоматів, кулеметів та
-              гарматних снарядів малого та середнього калібрів.
-            </p>
-          </div>
-          <div class="threat">
-            <img
-                class="threat__icon"
-                src="../src/assets/icons/tornado.svg"
-                alt="icon tornado"
-            />
-            <p class="threat__name">Природних катаклізмів</p>
-            <p class="threat__description">
-              Захистить від ураганів, аномальних дощів, гроз та великого
-              граду. Також від занадто високої температури повітря, під час
-              пожеж
-            </p>
-          </div>
-          <div class="threat">
-            <img
-                class="threat__icon"
-                src="../src/assets/icons/nuclear-reactor.svg"
-                alt="icon nuclear-reactor"
-            />
-            <p class="threat__name">Забруднення повітря</p>
-            <p class="threat__description">
-              Якщо повітря небезпечне для дихання у наслідок лісових пожеж
-              та промислових отруйних речовин у атмосферу
-            </p>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header header-wrapper">
+        <div class="container">
+          <div class="header-nav">
+            <div class="header-nav__menu-icon">
+              <span class="header-nav__menu-icon-body"></span>
+            </div>
+            <div class="header-nav__body">
+              <div class="header-nav__logo">
+                <img
+                  class="logo_company"
+                  src="./src/assets/img/logo.png"
+                  alt="logo_company"
+                />
+                <a
+                  class="name_company header-menu__link"
+                  data-goto=".first-page-wrapper"
+                  href="#"
+                  >ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС"</a
+                >
+              </div>
+              <ul class="header-nav__menu header-menu">
+                <li class="header-menu__link">
+                  <a
+                    class="header-menu__link"
+                    data-goto=".main-items-bunker"
+                    href="#"
+                  >
+                    Елементи сховища
+                  </a>
+                </li>
+                <li class="header-menu__link">
+                  <a class="header-menu__link" data-goto=".autonomy" href="#">
+                    Автономність
+                  </a>
+                </li>
+                <li class="header-menu__link">
+                  <a class="header-menu__link" data-goto=".stages" href="#">
+                    Етапи співпраці
+                  </a>
+                </li>
+                <li class="header-menu__link">
+                  <a class="header-menu__link" data-goto=".contacts" href="#">
+                    Контакти
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-nav__actions">
+              <a href="#" class="language">UA</a>
+              <button class="btn_color trigger-modal">
+                Зателефонуйте мені
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="protection-family-wrapper">
-    <div class="container mx-auto">
-      <div class="protection-family">
-        <div class="protection-family__title">
-          <div class="title title__protection">
-            <p class="title__header">Захистіть свою сім'ю</p>
-            <hr class="title__line"/>
-          </div>
-          <div class="protection-family__description">
-            <p class="description-text">
-              В Україні існує велика загроза обстрілів, ракетних атак,
-              бойових дій, аварій на виробництвах, загроза ядерної атаки та
-              аварій на найбільших у Європі атомних електростанціях.
+      </header>
+      <section class="first-page-wrapper">
+        <div class="container mx-auto">
+          <div class="first-page__content">
+            <p class="first-page__content-item first-page__text_narrow">
+              БУДІВНИЦТВО ІНДИВІДУАЛЬНОГО
             </p>
-            <br/>
-            <p class="description-text">
-              Щоб убезпечити себе і свою сім'ю від таких загроз, потрібний
-              надійний притулок.
+            <p class="first-page__content-item first-page__text_wide">
+              СХОВИЩА
             </p>
-            <br/>
-            <p class="description-text">
-              <span class="text-bold">Бункер (бомбосховище)</span> -
-              герметичне укріплене приміщення для безпечного перебування
-              людей із захистом від зовнішніх негативних впливів, таких як
-              бойові дії, урагани, пожежі, хімічне, біологічне, радіоактивне
-              забруднення та інше.
+            <p class="first-page__content-item first-page__text_default20">
+              Безпека під час бойових дій та стихийних лих
             </p>
-            <br/>
-            <p class="description-text">
-              <span class="text-bold">Бункер вас захистить</span>, для цього
-              в ньому є: надійна конструкція, міцні герметичні двері,
-              додатковий вихід; системи: фільтрації та регенерації повітря;
-              автономного живлення у разі зникнення електропостачання;
-              водопостачання та водовідведення для комфорту та більшої
-              автономності; посилення зв'язку інтернет та GSM для того, щоб
-              бути весь час на зв'язку та курсі подій; системи зберігання
-              продуктів та води.
-            </p>
-            <br/>
-            <p class="description-text">
-              У мирний і безпечний час можна використовувати бункер як
-              сховище, тихий робочий кабінет, кімнату для відпочинку,
-              медитації або як додаткове підсобне приміщення.
-            </p>
-          </div>
-          <div class="button-protection-family">
-            <div class="button_active">
+            <div class="button-active">
               <button class="button-active__button trigger-modal">
-                Дізнатись детальніше
+                Замовити консультацію
               </button>
               <div class="button-active__shadow"></div>
             </div>
           </div>
         </div>
-        <div class="protection-family-img">
-          <img
-              class="img-family"
-              src="../src/assets/img/img-protection-family.png"
-              alt="protection-family-img"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="main-items-bunker main-items-bunker-wrapper">
-    <div class="container mx-auto">
+      </section>
+      <section class="appointment-bunker-wrapper">
+        <div class="container mx-auto">
+          <div class="appointment-bunker">
+            <div class="title">
+              <p class="title__header">Призначення бункера</p>
+              <hr class="title__line" />
 
-      <div class="main-items-bunker__title title">
-        <p class="main-items-bunker__title-header title__header">основні елементи сховища</p>
-        <hr class="main-items-bunker__title-line title__line"/>
-        <p class="main-items-bunker__title-description title__description">
-          Перед тим, як розпочати будівництво наш спеціаліст приїзджає на ділянку
-          та робить геологію. Рекомендована глибина для бункера <span class="text-bold">4 метра</span> і більше
-        </p>
-      </div>
-
-      <div class="main-items-bunker__item-box">
-        <div class="main-items-bunker__item main-items-bunker__item-overlap">
-          <p class="main-items-bunker__item-title">перекриття</p>
-          <p class="main-items-bunker__item-text main-items-bunker__item-text-overlap">
-            Міцне монолітне перекриття з шаром ґрунту зверху в 1 метр для захисту від вибухів, розльоту шрапнелі та
-            уламків
-          </p>
-          <img src="../src/assets/icons/pointer-overlap.svg" alt="pointer-overlap"
-               class="main-items-bunker__item-pointer main-items-bunker__item-overlap-pointer">
-        </div>
-
-        <div class="main-items-bunker__item main-items-bunker__item-door">
-          <img src="../src/assets/icons/pointer-door.svg" alt="pointer-door"
-               class="main-items-bunker__item-pointer main-items-bunker__item-door-pointer">
-          <p class="main-items-bunker__item-title">двері</p>
-          <p class="main-items-bunker__item-text main-items-bunker__item-text-door">
-            Герметичні основні двері з металокаркасу та монолітного бетону – захистить від куль, вибухових хвиль,
-            осколків та орків – блокується зсередини.
-            Перешкоджає попаданню диму, радіоактивного пилу та хімічних отруйних речовин усередину приміщення
-          </p>
-        </div>
-
-        <div class="main-items-bunker__item main-items-bunker__item-hatch">
-          <p class="main-items-bunker__item-title">аварійний люк</p>
-          <p class="main-items-bunker__item-text main-items-bunker__item-text-hatch">
-            Для можливості покинути приміщення, якщо завалить основні двері. Розташовується
-            на відстані від входу в закритому колодязі з драбиною
-          </p>
-          <img src="../src/assets/icons/pointer-hatch.svg" alt="pointer-hatch"
-               class="main-items-bunker__item-pointer main-items-bunker__item-hatch-pointer">
-        </div>
-
-        <div class="main-items-bunker__item main-items-bunker__item-ventilation">
-          <p class="main-items-bunker__item-title">вентиляція</p>
-          <p class="main-items-bunker__item-text main-items-bunker__item-text-ventilation">
-            постійна притока свіжого повітря для підтримки комфортного мікроклімату в приміщенні
-          </p>
-          <img src="../src/assets/icons/pointer-ventilation.svg" alt="pointer-ventilation"
-               class="main-items-bunker__item-pointer main-items-bunker__item-ventilation-pointer">
-        </div>
-
-        <img
-            class="main-items-bunker__img-bunker-plan"
-            src="../src/assets/img/img-main-items-bunker.png"
-            alt="img-bunker-plan"
-        >
-      </div>
-    </div>
-  </section>
-  <section class="autonomy-wrapper">
-    <div class="container mx-auto">
-      <div class="autonomy">
-        <div class="autonomy__title title">
-          <p class="title__header">Автономність</p>
-          <hr class="title__line"/>
-          <p class="title__description">
-            У стані простою приміщення бере ресурси від вашого будинку і в
-            потрібний момент стає автономним
-          </p>
-        </div>
-        <div class="autonomy__branches">
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img1.png"
-                alt="autonomy img1"
-            />
-            <p class="autonomy__branch-title">Системи зберігання</p>
-            <p class="autonomy__branch-description description-text">
-              зручна організація зберігання особистих речей, консервації та
-              іншого
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img2.png"
-                alt="autonomy img2"
-            />
-            <p class="autonomy__branch-title">Підвищення комфорту</p>
-            <p class="autonomy__branch-description description-text">
-              зручні спальні місця, кухонний гарнітур, загальне приміщення з
-              TV-зоною, опалення тощо
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img3.png"
-                alt="autonomy img3"
-            />
-            <p class="autonomy__branch-title">Запаси</p>
-            <p class="autonomy__branch-description description-text">
-              Запас технічної, питної води та продуктів для максимальної
-              автономності
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img4.png"
-                alt="autonomy img4"
-            />
-            <p class="autonomy__branch-title">Автономне електроживлення</p>
-            <p class="autonomy__branch-description description-text">
-              генератори, акумуляторні батареї, джерела безперебійного
-              живлення для освітлення, заряджання комп'ютерів та телефонів,
-              приготування та розігріву їжі
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img5.png"
-                alt="autonomy img5"
-            />
-            <p class="autonomy__branch-title">
-              Водопостачання та водовідведення
-            </p>
-            <p class="autonomy__branch-description description-text">
-              підвищення комфорту перебування в сховищі. Являє собою туалет,
-              душ, рукомийник та комунікації
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img6.png"
-                alt="autonomy img6"
-            />
-            <p class="autonomy__branch-title">Система посилення зв'язку</p>
-            <p class="autonomy__branch-description description-text">
-              супутниковий інтернет, wi-fi роутери, підсилювачі телефонного
-              сигналу GSM із зовнішніми антенами для того, щоб бути завжди
-              на зв'язку та в курсі подій
-            </p>
-          </div>
-          <div class="autonomy__branch">
-            <img
-                class="autonomy__branch-img"
-                src="../src/assets/img/autonomy-img7.png"
-                alt="autonomy img7"
-            />
-            <p class="autonomy__branch-title">
-              Фільтрація та регенерація повітря
-            </p>
-            <p class="autonomy__branch-description description-text">
-              захистить ваш організм та органи дихання від хімічних,
-              біологічних, радіоактивних забруднень навіть за відсутності
-              електроенергії. Може працювати від електрики та вручну
-            </p>
+              <p class="title__description">
+                Власний бункер запезпечить Вам відчуття безпеки і у момент
+                небезпечних ситуацій <span class="text-bold">врятує Вас</span> і
+                Вашу родину від:
+              </p>
+            </div>
+            <div class="threat-box">
+              <div class="threat">
+                <img
+                  class="threat__icon"
+                  src="./src/assets/icons/bullets.svg"
+                  alt="icon bullets"
+                />
+                <p class="threat__name">Повномасштабних воєнних дій</p>
+                <p class="threat__description">
+                  Захищає від стрілецької зброї - автоматів, кулеметів та
+                  гарматних снарядів малого та середнього калібрів.
+                </p>
+              </div>
+              <div class="threat">
+                <img
+                  class="threat__icon"
+                  src="./src/assets/icons/tornado.svg"
+                  alt="icon tornado"
+                />
+                <p class="threat__name">Природних катаклізмів</p>
+                <p class="threat__description">
+                  Захистить від ураганів, аномальних дощів, гроз та великого
+                  граду. Також від занадто високої температури повітря, під час
+                  пожеж
+                </p>
+              </div>
+              <div class="threat">
+                <img
+                  class="threat__icon"
+                  src="./src/assets/icons/nuclear-reactor.svg"
+                  alt="icon nuclear-reactor"
+                />
+                <p class="threat__name">Забруднення повітря</p>
+                <p class="threat__description">
+                  Якщо повітря небезпечне для дихання у наслідок лісових пожеж
+                  та промислових отруйних речовин у атмосферу
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="what-is-bad-wrapper">
-    <div class="container mx-auto">
-      <div class="what-is-bad">
-        <div class="what-is-bad__title">
-          <div class="title">
-            <p class="title__header">Що, якщо все погано?</p>
-            <hr class="title__line"/>
-            <p class="title__description">
-              Коли не має доступу до основних елементів життезабезпечення,
-              автономність бункера врятує вас і вашу родину
-            </p>
-          </div>
-          <div class="button-prevent">
-            <button class="btn_color prevent trigger-modal">Як запобігти?</button>
-          </div>
-        </div>
-        <div class="what-is-bad__remedies">
-          <div class="remedies-box">
-            <div class="remedies-box__icon">
+      </section>
+      <section class="protection-family-wrapper">
+        <div class="container mx-auto">
+          <div class="protection-family">
+            <div class="protection-family__title">
+              <div class="title title__protection">
+                <p class="title__header">Захистіть свою сім'ю</p>
+                <hr class="title__line" />
+              </div>
+              <div class="protection-family__description">
+                <p class="description-text">
+                  В Україні існує велика загроза обстрілів, ракетних атак,
+                  бойових дій, аварій на виробництвах, загроза ядерної атаки та
+                  аварій на найбільших у Європі атомних електростанціях.
+                </p>
+                <br />
+                <p class="description-text">
+                  Щоб убезпечити себе і свою сім'ю від таких загроз, потрібний
+                  надійний притулок.
+                </p>
+                <br />
+                <p class="description-text">
+                  <span class="text-bold">Бункер (бомбосховище)</span> -
+                  герметичне укріплене приміщення для безпечного перебування
+                  людей із захистом від зовнішніх негативних впливів, таких як
+                  бойові дії, урагани, пожежі, хімічне, біологічне, радіоактивне
+                  забруднення та інше.
+                </p>
+                <br />
+                <p class="description-text">
+                  <span class="text-bold">Бункер вас захистить</span>, для цього
+                  в ньому є: надійна конструкція, міцні герметичні двері,
+                  додатковий вихід; системи: фільтрації та регенерації повітря;
+                  автономного живлення у разі зникнення електропостачання;
+                  водопостачання та водовідведення для комфорту та більшої
+                  автономності; посилення зв'язку інтернет та GSM для того, щоб
+                  бути весь час на зв'язку та курсі подій; системи зберігання
+                  продуктів та води.
+                </p>
+                <br />
+                <p class="description-text">
+                  У мирний і безпечний час можна використовувати бункер як
+                  сховище, тихий робочий кабінет, кімнату для відпочинку,
+                  медитації або як додаткове підсобне приміщення.
+                </p>
+              </div>
+              <div class="button-protection-family">
+                <div class="button_active">
+                  <button class="button-active__button trigger-modal">
+                    Дізнатись детальніше
+                  </button>
+                  <div class="button-active__shadow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="protection-family-img">
               <img
-                  class="icon__img"
-                  src="../src/assets/icons/electricity.svg"
-                  alt="electricity icon"
-              />
-              <img
-                  class="icon__ban"
-                  src="../src/assets/icons/ban-1.svg"
-                  alt="ban-1 img"
+                class="img-family"
+                src="./src/assets/img/img-protection-family.png"
+                alt="protection-family-img"
               />
             </div>
-            <div class="remedies-box__description">
-              <p>
-                акумулятори, джерела безперебійного живлення
-                та генератори електроенергії
+          </div>
+        </div>
+      </section>
+      <section class="main-items-bunker main-items-bunker-wrapper">
+        <div class="container mx-auto">
+          <div class="main-items-bunker__title title">
+            <p class="main-items-bunker__title-header title__header">
+              основні елементи сховища
+            </p>
+            <hr class="main-items-bunker__title-line title__line" />
+            <p class="main-items-bunker__title-description title__description">
+              Перед тим, як розпочати будівництво наш спеціаліст приїзджає на
+              ділянку та робить геологію. Рекомендована глибина для бункера
+              <span class="text-bold">4 метра</span> і більше
+            </p>
+          </div>
+
+          <div class="main-items-bunker__item-box">
+            <div
+              class="main-items-bunker__item main-items-bunker__item-overlap"
+            >
+              <p class="main-items-bunker__item-title">перекриття</p>
+              <p
+                class="main-items-bunker__item-text main-items-bunker__item-text-overlap"
+              >
+                Міцне монолітне перекриття з шаром ґрунту зверху в 1 метр для
+                захисту від вибухів, розльоту шрапнелі та уламків
+              </p>
+              <img
+                src="./src/assets/icons/pointer-overlap.svg"
+                alt="pointer-overlap"
+                class="main-items-bunker__item-pointer main-items-bunker__item-overlap-pointer"
+              />
+            </div>
+
+            <div class="main-items-bunker__item main-items-bunker__item-door">
+              <img
+                src="./src/assets/icons/pointer-door.svg"
+                alt="pointer-door"
+                class="main-items-bunker__item-pointer main-items-bunker__item-door-pointer"
+              />
+              <p class="main-items-bunker__item-title">двері</p>
+              <p
+                class="main-items-bunker__item-text main-items-bunker__item-text-door"
+              >
+                Герметичні основні двері з металокаркасу та монолітного бетону –
+                захистить від куль, вибухових хвиль, осколків та орків –
+                блокується зсередини. Перешкоджає попаданню диму, радіоактивного
+                пилу та хімічних отруйних речовин усередину приміщення
+              </p>
+            </div>
+
+            <div class="main-items-bunker__item main-items-bunker__item-hatch">
+              <p class="main-items-bunker__item-title">аварійний люк</p>
+              <p
+                class="main-items-bunker__item-text main-items-bunker__item-text-hatch"
+              >
+                Для можливості покинути приміщення, якщо завалить основні двері.
+                Розташовується на відстані від входу в закритому колодязі з
+                драбиною
+              </p>
+              <img
+                src="./src/assets/icons/pointer-hatch.svg"
+                alt="pointer-hatch"
+                class="main-items-bunker__item-pointer main-items-bunker__item-hatch-pointer"
+              />
+            </div>
+
+            <div
+              class="main-items-bunker__item main-items-bunker__item-ventilation"
+            >
+              <p class="main-items-bunker__item-title">вентиляція</p>
+              <p
+                class="main-items-bunker__item-text main-items-bunker__item-text-ventilation"
+              >
+                постійна притока свіжого повітря для підтримки комфортного
+                мікроклімату в приміщенні
+              </p>
+              <img
+                src="./src/assets/icons/pointer-ventilation.svg"
+                alt="pointer-ventilation"
+                class="main-items-bunker__item-pointer main-items-bunker__item-ventilation-pointer"
+              />
+            </div>
+
+            <img
+              class="main-items-bunker__img-bunker-plan"
+              src="./src/assets/img/img-main-items-bunker.png"
+              alt="img-bunker-plan"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="autonomy-wrapper">
+        <div class="container mx-auto">
+          <div class="autonomy">
+            <div class="autonomy__title title">
+              <p class="title__header">Автономність</p>
+              <hr class="title__line" />
+              <p class="title__description">
+                У стані простою приміщення бере ресурси від вашого будинку і в
+                потрібний момент стає автономним
+              </p>
+            </div>
+            <div class="autonomy__branches">
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img1.png"
+                  alt="autonomy img1"
+                />
+                <p class="autonomy__branch-title">Системи зберігання</p>
+                <p class="autonomy__branch-description description-text">
+                  зручна організація зберігання особистих речей, консервації та
+                  іншого
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img2.png"
+                  alt="autonomy img2"
+                />
+                <p class="autonomy__branch-title">Підвищення комфорту</p>
+                <p class="autonomy__branch-description description-text">
+                  зручні спальні місця, кухонний гарнітур, загальне приміщення з
+                  TV-зоною, опалення тощо
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img3.png"
+                  alt="autonomy img3"
+                />
+                <p class="autonomy__branch-title">Запаси</p>
+                <p class="autonomy__branch-description description-text">
+                  Запас технічної, питної води та продуктів для максимальної
+                  автономності
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img4.png"
+                  alt="autonomy img4"
+                />
+                <p class="autonomy__branch-title">Автономне електроживлення</p>
+                <p class="autonomy__branch-description description-text">
+                  генератори, акумуляторні батареї, джерела безперебійного
+                  живлення для освітлення, заряджання комп'ютерів та телефонів,
+                  приготування та розігріву їжі
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img5.png"
+                  alt="autonomy img5"
+                />
+                <p class="autonomy__branch-title">
+                  Водопостачання та водовідведення
+                </p>
+                <p class="autonomy__branch-description description-text">
+                  підвищення комфорту перебування в сховищі. Являє собою туалет,
+                  душ, рукомийник та комунікації
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img6.png"
+                  alt="autonomy img6"
+                />
+                <p class="autonomy__branch-title">Система посилення зв'язку</p>
+                <p class="autonomy__branch-description description-text">
+                  супутниковий інтернет, wi-fi роутери, підсилювачі телефонного
+                  сигналу GSM із зовнішніми антенами для того, щоб бути завжди
+                  на зв'язку та в курсі подій
+                </p>
+              </div>
+              <div class="autonomy__branch">
+                <img
+                  class="autonomy__branch-img"
+                  src="./src/assets/img/autonomy-img7.png"
+                  alt="autonomy img7"
+                />
+                <p class="autonomy__branch-title">
+                  Фільтрація та регенерація повітря
+                </p>
+                <p class="autonomy__branch-description description-text">
+                  захистить ваш організм та органи дихання від хімічних,
+                  біологічних, радіоактивних забруднень навіть за відсутності
+                  електроенергії. Може працювати від електрики та вручну
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what-is-bad-wrapper">
+        <div class="container mx-auto">
+          <div class="what-is-bad">
+            <div class="what-is-bad__title">
+              <div class="title">
+                <p class="title__header">Що, якщо все погано?</p>
+                <hr class="title__line" />
+                <p class="title__description">
+                  Коли не має доступу до основних елементів життезабезпечення,
+                  автономність бункера врятує вас і вашу родину
+                </p>
+              </div>
+              <div class="button-prevent">
+                <button class="btn_color prevent trigger-modal">
+                  Як запобігти?
+                </button>
+              </div>
+            </div>
+            <div class="what-is-bad__remedies">
+              <div class="remedies-box">
+                <div class="remedies-box__icon">
+                  <img
+                    class="icon__img"
+                    src="./src/assets/icons/electricity.svg"
+                    alt="electricity icon"
+                  />
+                  <img
+                    class="icon__ban"
+                    src="./src/assets/icons/ban-1.svg"
+                    alt="ban-1 img"
+                  />
+                </div>
+                <div class="remedies-box__description">
+                  <p>
+                    акумулятори, джерела безперебійного живлення та генератори
+                    електроенергії
+                  </p>
+                </div>
+              </div>
+              <div class="remedies-box">
+                <div class="remedies-box__icon">
+                  <img
+                    class="icon__img"
+                    src="./src/assets/icons/water-drop.svg"
+                    alt="water-drop icon"
+                  />
+                  <img
+                    class="icon__ban"
+                    src="./src/assets/icons/ban-1.svg"
+                    alt="ban-1 img"
+                  />
+                </div>
+                <div class="remedies-box__description">
+                  <p>
+                    стаціонарне водопостачання та водовідведення, запас у
+                    ємностях питної та технічної води
+                  </p>
+                </div>
+              </div>
+              <div class="remedies-box">
+                <div class="remedies-box__icon">
+                  <img
+                    class="icon__img"
+                    src="./src/assets/icons/wind.svg"
+                    alt="wind icon"
+                  />
+                  <img
+                    class="icon__ban"
+                    src="./src/assets/icons/ban-1.svg"
+                    alt="ban-1 img"
+                  />
+                </div>
+                <div class="remedies-box__description">
+                  <p>
+                    запас кисню регенерація вуглекислого газу індивідуальні
+                    засоби захисту
+                  </p>
+                </div>
+              </div>
+              <div class="remedies-box">
+                <div class="remedies-box__icon">
+                  <img
+                    class="icon__img wifi-img"
+                    src="./src/assets/icons/wifi.svg"
+                    alt="wifi icon"
+                  />
+                  <img
+                    class="icon__ban"
+                    src="./src/assets/icons/ban-1.svg"
+                    alt="ban-1 img"
+                  />
+                </div>
+                <div class="remedies-box__description">
+                  <p>
+                    супутниковий інтернет, радіозв'язок, датчики радіації
+                    (дозиметри) та забруднення повітря
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="swiper-section-wrapper">
+        <div class="container mx-auto">
+          <div class="swiper__title title">
+            <p class="title__header">наші останні роботи</p>
+            <hr class="title__line" />
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-1.png"
+                alt="slide-1"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-2.png"
+                alt="slide-2"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-3.png"
+                alt="slide-3"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-4.jpg"
+                alt="slide-4"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-5.jpg"
+                alt="slide-5"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-6.jpg"
+                alt="slide-6"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-7.jpg"
+                alt="slide-7"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-slide-img swiper-lazy"
+                src="./src/assets/img/1х1.png"
+                data-src="./src/assets/img/swiper-slides/slide-8.jpg"
+                alt="slide-8"
+              />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+          </div>
+
+          <div class="swiper__navigation">
+            <div class="swiper-pagination">
+              <svg
+                class="swiper-pagination-bullet"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <svg
+              class="swiper-button-prev"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.91369 22.8882L10.2395 21.5624L4.61467 15.9376L29.0625 15.9376L29.0625 14.0625L4.61484 14.0625L10.2395 8.43785L8.91369 7.11205L1.02551 15.0001L8.91369 22.8882Z"
+                fill="#4F4A45"
+              />
+            </svg>
+            <svg
+              class="swiper-button-next"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.0863 7.11182L19.7605 8.43762L25.3853 14.0624H0.9375V15.9375H25.3852L19.7605 21.5621L21.0863 22.8879L28.9745 14.9999L21.0863 7.11182Z"
+                fill="#4F4A45"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="stages stages-wrapper">
+        <div class="container mx-auto">
+          <div class="stages__title title">
+            <p class="stages__title-header title__header">Етапи співпраці</p>
+            <hr class="stages__title-line title__line" />
+            <p class="stages__title-description title__description">
+              Шлях до безпеки
+            </p>
+          </div>
+
+          <div class="stages__box">
+            <div class="stages__item">
+              <p class="stages__item-number">01</p>
+              <p class="stages__item-text">Вибір рівня безпеки бункера</p>
+              <img
+                class="stages__item-arrow"
+                src="./src/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+              />
+            </div>
+
+            <div class="stages__item">
+              <p class="stages__item-number">02</p>
+              <p class="stages__item-text stages__item-text-2">
+                типовий проект який розроблений та виконаний Придніпровською
+                державною академією та Індивідуальне проектування за Вашим
+                замовленням
+              </p>
+              <img
+                class="stages__item-arrow stages__item-arrow-2"
+                src="./src/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+              />
+            </div>
+          </div>
+
+          <div class="stages__box">
+            <div class="stages__item">
+              <p class="stages__item-number">03</p>
+              <p class="stages__item-text">Укладання договору</p>
+              <img
+                class="stages__item-arrow"
+                src="./src/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+              />
+            </div>
+
+            <div class="stages__item">
+              <p class="stages__item-number">04</p>
+              <p class="stages__item-text">Будівництво об'єкту</p>
+              <img
+                class="stages__item-arrow"
+                src="./src/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+              />
+            </div>
+
+            <div class="stages__item">
+              <p class="stages__item-number">05</p>
+              <p class="stages__item-text">
+                встановлення основного та додаткового обладнання
               </p>
             </div>
           </div>
-          <div class="remedies-box">
-            <div class="remedies-box__icon">
-              <img
-                  class="icon__img"
-                  src="../src/assets/icons/water-drop.svg"
-                  alt="water-drop icon"
-              />
-              <img
-                  class="icon__ban"
-                  src="../src/assets/icons/ban-1.svg"
-                  alt="ban-1 img"
-              />
-            </div>
-            <div class="remedies-box__description">
-              <p>
-                стаціонарне водопостачання та водовідведення, запас у
-                ємностях питної та технічної води
-              </p>
-            </div>
-          </div>
-          <div class="remedies-box">
-            <div class="remedies-box__icon">
-              <img
-                  class="icon__img"
-                  src="../src/assets/icons/wind.svg"
-                  alt="wind icon"
-              />
-              <img
-                  class="icon__ban"
-                  src="../src/assets/icons/ban-1.svg"
-                  alt="ban-1 img"
-              />
-            </div>
-            <div class="remedies-box__description">
-              <p>
-                запас кисню регенерація вуглекислого газу
-                індивідуальні засоби захисту
-              </p>
-            </div>
-          </div>
-          <div class="remedies-box">
-            <div class="remedies-box__icon">
-              <img
-                  class="icon__img wifi-img"
-                  src="../src/assets/icons/wifi.svg"
-                  alt="wifi icon"
-              />
-              <img
-                  class="icon__ban"
-                  src="../src/assets/icons/ban-1.svg"
-                  alt="ban-1 img"
-              />
-            </div>
-            <div class="remedies-box__description">
-              <p>
-                супутниковий інтернет, радіозв'язок, датчики радіації (дозиметри) та забруднення повітря
-              </p>
-            </div>
+        </div>
+      </section>
+      <section class="contacts contacts-wrapper">
+        <div class="container mx-auto">
+          <div class="contacts__title">
+            <p class="contacts__title-header title__header">контакти</p>
+            <hr class="contacts__title-line title__line" />
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="swiper-section-wrapper">
-    <div class="container mx-auto">
-      <div class="swiper__title title">
-        <p class="title__header">наші останні роботи</p>
-        <hr class="title__line"/>
-      </div>
-    </div>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-1.png" alt="slide-1">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-2.png" alt="slide-2">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-3.png" alt="slide-3">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-4.jpg" alt="slide-4">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-5.jpg" alt="slide-5">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-6.jpg" alt="slide-6">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-7.jpg" alt="slide-7">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide-img swiper-lazy" src="../src/assets/img/1х1.png"
-               data-src="../src/assets/img/swiper-slides/slide-8.jpg" alt="slide-8">
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-      </div>
 
-      <div class="swiper__navigation">
-        <div class="swiper-pagination">
-          <svg class="swiper-pagination-bullet" width="13" height="13" viewBox="0 0 13 13" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9"/>
-          </svg>
-        </div>
-        <svg class="swiper-button-prev" width="30" height="30" viewBox="0 0 30 30" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-              d="M8.91369 22.8882L10.2395 21.5624L4.61467 15.9376L29.0625 15.9376L29.0625 14.0625L4.61484 14.0625L10.2395 8.43785L8.91369 7.11205L1.02551 15.0001L8.91369 22.8882Z"
-              fill="#4F4A45"/>
-        </svg>
-        <svg class="swiper-button-next" width="30" height="30" viewBox="0 0 30 30" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-              d="M21.0863 7.11182L19.7605 8.43762L25.3853 14.0624H0.9375V15.9375H25.3852L19.7605 21.5621L21.0863 22.8879L28.9745 14.9999L21.0863 7.11182Z"
-              fill="#4F4A45"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-  <section class="stages stages-wrapper">
-    <div class="container mx-auto">
+        <div class="contacts-wrapper contacts-wrapper_grey">
+          <div class="container mx-auto">
+            <div class="contact__company">
+              <div class="contact__address">
+                <div class="contact__icon">
+                  <img
+                    src="./src/assets/icons/geo-location.svg"
+                    alt="address__icon"
+                  />
+                </div>
+                <p class="contact__address-text">
+                  <span class="underline-text">
+                    ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС" 49000, Україна, м. Дніпро, вул.
+                    Шевченка, 10Б, офіс 2
+                  </span>
+                </p>
+              </div>
 
-      <div class="stages__title title">
-        <p class="stages__title-header title__header">Етапи співпраці</p>
-        <hr class="stages__title-line title__line"/>
-        <p class="stages__title-description title__description">
-          Шлях до безпеки
-        </p>
-      </div>
+              <div class="contact__phone">
+                <img
+                  class="contact__icon"
+                  src="./src/assets/icons/phone.svg"
+                  alt="phone__icon"
+                />
+                <a class="contact__phone-text" href="#">+380 (66) 001 07 14</a>
+              </div>
+              <div class="contact__schedule">
+                <p class="contact__opening-hours">пн-пт: з 9:00 до 18:00</p>
+                <p class="contact__weekends">сб-нд: вихідні</p>
+              </div>
 
-      <div class="stages__box">
-        <div class="stages__item">
-          <p class="stages__item-number">
-            01
-          </p>
-          <p class="stages__item-text">
-            Вибір рівня безпеки бункера
-          </p>
-          <img
-              class="stages__item-arrow"
-              src="../src/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-          />
+              <div class="contact__mail">
+                <img
+                  class="contact__icon"
+                  src="./src/assets/icons/post-mail.svg"
+                  alt="mail__icon"
+                />
+                <a class="contact__mail-text" href="#"
+                  >GrandStroiAlyans@gmail.com</a
+                >
+              </div>
+
+              <div class="contact__license">
+                <img
+                  class="contact__icon"
+                  src="./src/assets/icons/document.svg"
+                  alt="license__icon"
+                />
+                <p class="contact__license-text">Номер ліцензії 40536870</p>
+              </div>
+              <div class="contact-facebook">
+                <svg
+                  class="contact-facebook--svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_184_6)">
+                    <path
+                      d="M28.3398 0C28.7956 0 29.1862 0.16276 29.5117 0.488281C29.8372 0.813802 30 1.20443 30 1.66016V28.3398C30 28.7956 29.8372 29.1862 29.5117 29.5117C29.1862 29.8372 28.7956 30 28.3398 30H20.7031V18.3789H24.5898L25.1758 13.8477H20.7031V10.957C20.7031 10.2279 20.8561 9.68099 21.1621 9.31641C21.4681 8.95182 22.0638 8.76953 22.9492 8.76953L25.332 8.75V4.70703C24.5117 4.58984 23.3529 4.53125 21.8555 4.53125C20.0846 4.53125 18.6686 5.05208 17.6074 6.09375C16.5462 7.13542 16.0156 8.60677 16.0156 10.5078V13.8477H12.1094V18.3789H16.0156V30H1.66016C1.20443 30 0.813802 29.8372 0.488281 29.5117C0.16276 29.1862 0 28.7956 0 28.3398V1.66016C0 1.20443 0.16276 0.813802 0.488281 0.488281C0.813802 0.16276 1.20443 0 1.66016 0H28.3398Z"
+                      fill="#FFC300"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_184_6">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="stages__item">
-          <p class="stages__item-number">
-            02
-          </p>
-          <p class="stages__item-text stages__item-text-2">
-            типовий проект який розроблений та виконаний
-            Придніпровською державною академією
-            та Індивідуальне проектування за Вашим замовленням
-          </p>
-          <img
-              class="stages__item-arrow stages__item-arrow-2"
-              src="../src/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-          />
+        <div class="contact__footer contacts-wrapper">
+          <div class="container mx-auto">
+            <div class="contacts__callback">
+              <p class="contacts__callback-title">
+                залиште свої контактні данні
+              </p>
+              <p class="contacts__callback-subtitle">
+                Наш менеджер зателефонує вам протягом доби і проконсультує з
+                будь-яких питань
+              </p>
+              <div class="contacts__callback-name-phone">
+                <input
+                  class="contacts__callback-name contacts__callback-form"
+                  type="text"
+                  placeholder="Ім’я*"
+                />
+                <input
+                  class="contacts__callback-phone contacts__callback-form"
+                  type="text"
+                  placeholder="Номер телефону*"
+                />
+              </div>
+              <input
+                class="contacts__callback-mail contacts__callback-form"
+                type="text"
+                placeholder="E-mail"
+              />
+              <textarea
+                class="contacts__callback-text contacts__callback-form"
+                placeholder="Ваше повідомлення"
+              ></textarea>
+              <button class="contacts__callback-button">
+                Відправити запит
+              </button>
+            </div>
+          </div>
         </div>
+      </section>
+      <footer id="footer" class="footer footer-wrapper">
+        <div class="container mx-auto">
+          <div class="footer-content">
+            <div class="footer-content__left">
+              <p class="footer-content__company">
+                ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС", 2022
+              </p>
+              <p class="footer-content__rights">
+                <span class="footer-content__copyright">©</span>Всі права
+                захищені
+              </p>
+            </div>
 
-      </div>
-
-      <div class="stages__box">
-        <div class="stages__item">
-          <p class="stages__item-number">
-            03
-          </p>
-          <p class="stages__item-text">
-            Укладання договору
-          </p>
-          <img
-              class="stages__item-arrow"
-              src="../src/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-          />
-        </div>
-
-        <div class="stages__item">
-          <p class="stages__item-number">
-            04
-          </p>
-          <p class="stages__item-text">
-            Будівництво об'єкту
-          </p>
-          <img
-              class="stages__item-arrow"
-              src="../src/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-          />
-        </div>
-
-        <div class="stages__item">
-          <p class="stages__item-number">
-            05
-          </p>
-          <p class="stages__item-text">
-            встановлення основного
-            та додаткового обладнання
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section class="contacts contacts-wrapper">
-
-    <div class="container mx-auto">
-      <div class="contacts__title">
-        <p class="contacts__title-header title__header">контакти</p>
-        <hr class="contacts__title-line title__line"/>
-      </div>
-    </div>
-
-    <div class="contacts-wrapper contacts-wrapper_grey">
-      <div class="container mx-auto">
-        <div class="contact__company">
-          <div class="contact__address">
-            <div class="contact__icon">
-              <img
-                  src="../src/assets/icons/geo-location.svg"
-                  alt="address__icon"
+            <div class="footer-content__right">
+              <a href="#" class="footer-content__confidentiality"
+                >Політика конфіденційності</a
               >
             </div>
-            <p class="contact__address-text"><span class="underline-text"> ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС"
-              49000, Україна, м. Дніпро,
-              вул. Шевченка, 10Б, офіс 2
-            </span></p>
-          </div>
-
-          <div class="contact__phone">
-            <img
-                class="contact__icon"
-                src="../src/assets/icons/phone.svg"
-                alt="phone__icon"
-            >
-            <a class="contact__phone-text" href="#">+380 (66) 001 07 14</a>
-          </div>
-          <div class="contact__schedule">
-            <p class="contact__opening-hours">пн-пт: з 9:00 до 18:00</p>
-            <p class="contact__weekends">сб-нд: вихідні</p>
-          </div>
-
-
-          <div class="contact__mail">
-            <img
-                class="contact__icon"
-                src="../src/assets/icons/post-mail.svg"
-                alt="mail__icon"
-            >
-            <a class="contact__mail-text" href="#">GrandStroiAlyans@gmail.com</a>
-          </div>
-
-
-          <div class="contact__license">
-            <img
-                class="contact__icon"
-                src="../src/assets/icons/document.svg"
-                alt="license__icon"
-            >
-            <p class="contact__license-text">Номер ліцензії 40536870</p>
-          </div>
-          <div class="contact-facebook">
-            <svg class="contact-facebook--svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_184_6)">
-                <path
-                    d="M28.3398 0C28.7956 0 29.1862 0.16276 29.5117 0.488281C29.8372 0.813802 30 1.20443 30 1.66016V28.3398C30 28.7956 29.8372 29.1862 29.5117 29.5117C29.1862 29.8372 28.7956 30 28.3398 30H20.7031V18.3789H24.5898L25.1758 13.8477H20.7031V10.957C20.7031 10.2279 20.8561 9.68099 21.1621 9.31641C21.4681 8.95182 22.0638 8.76953 22.9492 8.76953L25.332 8.75V4.70703C24.5117 4.58984 23.3529 4.53125 21.8555 4.53125C20.0846 4.53125 18.6686 5.05208 17.6074 6.09375C16.5462 7.13542 16.0156 8.60677 16.0156 10.5078V13.8477H12.1094V18.3789H16.0156V30H1.66016C1.20443 30 0.813802 29.8372 0.488281 29.5117C0.16276 29.1862 0 28.7956 0 28.3398V1.66016C0 1.20443 0.16276 0.813802 0.488281 0.488281C0.813802 0.16276 1.20443 0 1.66016 0H28.3398Z"
-                    fill="#FFC300"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_184_6">
-                  <rect width="30" height="30" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-
           </div>
         </div>
+      </footer>
+    </div>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content mx-auto">
+        <img
+          class="modal__close-button"
+          src="./src/assets/icons/akar-icons_cross.svg"
+          alt="img_close-button"
+        />
+        <div class="modal__title">залиште свої контактні данні</div>
+        <div class="modal__subtitle">
+          Наш менеджер зателефонує вам протягом доби і проконсультує з будь-яких
+          питань
+        </div>
+        <input class="modal__input" type="text" placeholder="Ім'я*" />
+        <input
+          class="modal__input"
+          type="number"
+          placeholder="Номер телефону*"
+        />
+        <button class="modal__btn-request">Відправити запит</button>
       </div>
     </div>
-
-    <div class="contact__footer contacts-wrapper">
-      <div class="container mx-auto">
-        <div class="contacts__callback">
-          <p class="contacts__callback-title">залиште свої контактні данні</p>
-          <p class="contacts__callback-subtitle">Наш менеджер зателефонує вам протягом доби
-            і проконсультує з будь-яких питань</p>
-          <div class="contacts__callback-name-phone">
-            <input class="contacts__callback-name contacts__callback-form" type="text" placeholder="Ім’я*">
-            <input class="contacts__callback-phone contacts__callback-form" type="text" placeholder="Номер телефону*">
-          </div>
-          <input class="contacts__callback-mail contacts__callback-form" type="text" placeholder="E-mail">
-          <textarea class="contacts__callback-text contacts__callback-form" placeholder="Ваше повідомлення"></textarea>
-          <button class="contacts__callback-button">Відправити запит</button>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <footer id="footer" class="footer footer-wrapper">
-
-    <div class="container mx-auto">
-      <div class="footer-content">
-        <div class="footer-content__left">
-          <p class="footer-content__company">ТОВ "ГРАНД-СТРОЙ-АЛЬЯНС", 2022</p>
-          <p class="footer-content__rights"><span class="footer-content__copyright">©</span>Всі права захищені</p>
-        </div>
-
-        <div class="footer-content__right">
-          <a href="#" class="footer-content__confidentiality">Політика конфіденційності</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<div class="modal">
-  <div class="modal__overlay"></div>
-  <div class="modal__content mx-auto">
-    <img class="modal__close-button" src="../src/assets/icons/akar-icons_cross.svg" alt="img_close-button">
-    <div class="modal__title">залиште свої контактні данні</div>
-    <div class="modal__subtitle">Наш менеджер зателефонує вам протягом доби
-      і проконсультує з будь-яких питань
-    </div>
-    <input class="modal__input" type="text" placeholder="Ім'я*">
-    <input class="modal__input" type="number" placeholder="Номер телефону*">
-    <button class="modal__btn-request">Відправити запит</button>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
